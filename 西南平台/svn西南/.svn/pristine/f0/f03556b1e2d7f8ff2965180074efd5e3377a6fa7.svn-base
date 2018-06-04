@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>系统管理</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   <link rel="icon" href="../../img/bg/logo.png">
+    <!-- Bootstrap 3.3.7 -->
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/iconfont.css">
+    <!-- Theme style -->
+   <!-- Theme style -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../../assets/css/AdminLTE.css">
+    <link rel="stylesheet" href="../../assets/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="../../assets/css/colortable.css">
+    <link rel="stylesheet" href="../../assets/css/select/select2.min.css">
+
+    <link rel="stylesheet" href="../../plugins/slideicon/slide.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+   
+    <link rel="stylesheet" href="../../assets/js/iCheck/all.css">
+
+</head>
+<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
+<!-- the fixed layout is not compatible with sidebar-mini -->
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo"></div>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <div class="navbar-custom-menu">
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li>
+                    <a href="../../index.html">
+                        <i class="iconfont icon-shouye"></i> <span>首页</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="iconfont icon-moshiyubao"></i> <span>模式预报</span>
+                        <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="area.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 区域</a></li>
+                        <li><a href="city.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 城市</a></li>
+                        <li><a href="citycast.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 城市预报2</a></li>
+            			<li><a href="analysis.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 中长期分析</a></li>
+                    </ul>
+                </li>
+               <li class="treeview">
+					<a href="#">
+						<i class="iconfont icon-yewutianbao"></i> <span>业务填报</span>
+						<span class="pull-right-container">
+				              <i class="fa fa-angle-left pull-right"></i>
+				            </span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="southwestRegio.html">
+								<!--<i class="iconfont icon-moshiyubao"></i>-->西南区域</a>
+						</li>
+						<li>
+							<a href="SichuanProvince.html">
+								<!--<i class="iconfont icon-moshiyubao"></i>-->四川省</a>
+						</li>
+					</ul>
+				</li>
+                 <li class="treeview">
+		          <a href="#">
+		             <i class="iconfont icon-yubaopinggu"></i> <span>预报评估</span>
+		            <span class="pull-right-container">
+		              <i class="fa fa-angle-left pull-right"></i>
+		            </span>
+		          </a>
+		          <ul class="treeview-menu">
+		            <li><a href="Expertevaluation.html">专家评估</a></li>
+		            <!--<li><a href="Modeevaluation.html">模式评估</a></li>
+		            <li><a href="Statisticalforecastevaluation.html"> 统计预报评估</a></li>
+		            <li><a href="exportData.html">数据导出</a></li>-->
+		            <li><a href="Evaluationsummary.html">评估汇总</a></li>
+		          </ul>
+		        </li>
+                  <li class="treeview active">
+			          <a href="#">
+			            <i class="iconfont icon-gonggongxinxi"></i> <span>公共信息</span>
+			            <span class="pull-right-container">
+			              <i class="fa fa-angle-left pull-right"></i>
+			            </span>
+			          </a>
+			          <ul class="treeview-menu">
+			            <li><a href="urbanforecast.html"><!--<i class="iconfont icon-moshiyubao"></i>-->城市预报结果</a></li>
+			            <li><a href="regionalforecast.html"><!--<i class="iconfont icon-moshiyubao"></i>-->区域预报结果</a></li>
+			            <li class="active"><a href="colortable.html"><!--<i class="iconfont icon-moshiyubao"></i>-->刷色表</a></li>		          
+			          </ul>
+			        </li>
+                <li>
+                    <a href="polluteanalysis.html">
+                        <i class="iconfont icon-wuranlaiyuanfenxi"></i> <span>污染解析</span>
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="system.html">
+                        <i class="iconfont icon-xitongguanli"></i> <span>系统管理</span>
+                    </a>
+                </li>-->
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper operate-wrapper">
+    	 <div class="head-control">
+	         <ul class="publicnav" id="publicnav">
+    	 		<div class="input-daterange input-group bottomdivide" id="rangeDatePicker">
+	             <span class="spanword">起报时间:</span><input id="datestart" type="text" class="input-sm" name="startime" />
+	            </div>
+    	 		<button class="search">查询</button>
+    	 	</ul>
+    	 	<span class="exportbtn">
+    	 		<a download="export.xls" href="#" onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');">导出至Excel</a>
+    	 	</span>
+       	</div>
+       	<div class="writediv">
+       		<p>填表人：<span class="writename"></span></p>
+       	</div>
+       	<div class="colortable">
+       		<table class='tabledata table  table-hover' id='datatable'></table>
+       	</div>
+    </div>
+    <aside class="control-sidebar control-sidebar-dark"></aside>
+    <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../../assets/js/jq/jquery-2.1.0.min.js"></script>
+<script type="text/ecmascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" ></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../../assets/js/bootstrap/bootstrap-datepicker.min.js"></script>
+<script src="../../assets/js/bootstrap/locales/bootstrap-datepicker.zh-CN.min.js" charset="UTF-8"></script>
+<script src="../../assets/js/select/select2.full.min.js"></script>
+<script src="../../assets/js/date/date.js"></script>
+<script src="../../assets/js/data/area.js"></script>
+<script src="../../assets/js/config.js"></script>
+<script src="../../plugins/slideicon/slide.js"></script>
+<script src="../../assets/js/iCheck/icheck.js"></script>
+<!-- AdminLTE App -->
+<script src="../../assets/js/request.js"></script>
+<script src="../../assets/js/adminlte.min.js"></script>
+<script src="../../assets/js/data/data.js"></script>
+<script src="../../assets/js/tool.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/excellentexport.js"></script>
+<script src="../../assets/js/page/colortable.js"></script>
+<script src="../../assets/js/url.js"></script>
+
+</body>
+</html>

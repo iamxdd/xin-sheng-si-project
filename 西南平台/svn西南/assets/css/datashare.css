@@ -1,0 +1,105 @@
+.head-control {
+    /*padding-bottom: 10px;*/
+    margin: 10px 0 20px 0;
+    position: relative;
+   -moz-box-shadow:  0px 2px 2px #888888; /* 老的 Firefox */
+	box-shadow: 0px 2px 2px #888888;
+	position: relative;
+}
+.line{
+	height: 25px;
+	margin-left:20px;
+	width: 10%;
+	line-height: 25px;
+	box-shadow: 0 7px 5px -4px #3c8dbc;  
+	box-sizing: border-box;
+}
+.nowstate{
+	width: 200px;
+	padding: 1px;
+	top:56px;
+	line-height: 25px;
+	position: fixed;
+	right: 10px;
+	background: rgb(255,255,225);
+	color:rgb(255,133,0);
+	border:1px solid rgb(255,133,0);
+	box-sizing: border-box;
+	z-index: 1;
+	text-indent: 10px;
+}
+.select-day .btn {
+    width: 100px;
+    height: 29px;
+    line-height: 12px;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    background: #fff;
+    color: #101010;
+    border: 1px solid #BBBBBB;
+    outline: none;
+}
+.select-day .dropdown .title {
+    text-align: center;
+    display: inline-block;
+    width: 86px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    line-height: 26px;
+}
+.select-day li {
+    margin-right: 5px;
+    width: 93px;
+    height: 26px;
+    font-size: 12px;
+    color: #101010;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+.select-day .dropdown-menu {
+    top: 25px;
+    left: 88px;
+    /* background: none; */
+    border: 1px solid rgba(2, 154, 227, 1);
+}
+.input-daterange {
+    padding: 0 10px;
+}
+.spanword {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#datestart{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #BBBBBB;
+    display: inline-block;
+}
+.select-day{
+	margin-top:30px;
+	padding: 0 10px;
+}
+.searchsave{
+	 width: 80px;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 5px;
+    background-color: rgba(30, 180, 240, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto;
+    border: 0;
+    margin:30px 0 0 100px;
+    outline: none;
+}
+
+
+/*过程监控*/
+.processp{
+	text-indent: 30px;
+}

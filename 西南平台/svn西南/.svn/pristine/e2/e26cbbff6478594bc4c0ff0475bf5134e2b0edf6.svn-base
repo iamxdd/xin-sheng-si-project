@@ -1,0 +1,271 @@
+.head-control{
+	padding-bottom: 10px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    border-bottom: 1px solid #008dd2;
+    height: 40px;
+}
+#datestart ,#dateend{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #BBBBBB;
+    display: inline-block;
+}
+.search{
+	width: 80px;
+	height: 30px;
+	line-height: 20px;
+	border-radius: 5px;
+	background-color: rgba(30, 180, 240, 1);
+	color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Roboto;
+	border:0
+}
+.select-day{
+	display: inline-block;
+	position: relative;
+}
+.select-day .dropdown{
+    background: none;
+}
+.select-day .dropdown button{
+    border-radius: 0;
+}
+.select-day .dropdown .title{
+    text-align: center;
+    display: inline-block;
+    width: 86px;
+    height: 26px;
+    position: absolute;
+    top:0;
+    left: 4px;
+    line-height: 26px;
+}
+#tbodytable tr td{
+	max-width: 300px;
+	text-align: center;
+	vertical-align: middle;
+}
+#tbodytable tr td:nth-child(4){
+	max-width: 800px;
+}
+.select-day .dropdown-menu{
+    top: 25px;
+    left: 88px;
+    /*background: none;*/
+   border:1px solid rgba(2, 154, 227, 1);
+}
+.select-day .btn{
+	width: 100px;
+    height: 29px;
+    line-height: 12px;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    background: #fff;
+    color: #101010;
+    border: 1px solid #BBBBBB;
+    outline: none;
+}
+.caret{
+	position: absolute;
+    right: 2px;
+    top: 12px;
+    z-index: 200;
+    color: white;
+}
+
+.select-day li {
+    margin-right: 5px;
+    width: 93px;
+    height: 26px;
+    font-size: 12px;
+    color: #101010;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .input-daterange{
+  	display: inline-block;
+  	padding: 0 10px;
+  }
+.spanword {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.tabledata {
+    width: 99%;
+    margin: 40px auto;
+}
+.table>thead>tr>td{
+    vertical-align: middle;
+    border-bottom: 1px solid #101010  !important;
+    text-align: center;   
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	 padding: 3px!important;
+}
+ table,table tr th, table tr td { border:1px solid #101010; }
+ table tr{
+ 	text-align: center;
+ }
+ .urbantable{
+	clear: both;
+	/*overflow: scroll;*/
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 800px;
+    width: 99%;
+}
+.detaliinfo{
+	border:0;
+	color:rgba(30, 180, 240, 1);
+	background:none;
+	outline: none;
+}
+.fixed-div {
+    z-index: 999999;
+    background: rgba(0, 0, 0, .2);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+/*弹框*/
+
+.fixed-div {
+	z-index: 999999;
+	background: rgba(0, 0, 0, .2);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.fixed-div .fixed-box {
+	margin: 0 auto;
+	margin-top: 200px;
+	width: 1300px;
+	height: 440px;
+	line-height: 20px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0px 0px 3px 0px rgba(170, 170, 170, 1);
+	background: #fff;
+	padding: 10px;
+
+}
+.evaluate-list-remark{
+	clear:both
+}
+.open-btn{
+	clear:both
+}
+.box-left {
+	left: 460px;
+	top: 348px;
+	width: 300px;
+	height: 200px;
+	float: left;
+}
+
+.box-left img {
+	width: 100%;
+	height: 100%;
+}
+
+.fixed-box h4 {
+	height: 21px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 18px;
+	text-align: left;
+	line-height: 6px;
+	border-bottom: 1px solid rgba(170, 170, 170, 1);
+}
+.btn-closeAll{
+    /*margin-top:20px;*/
+	width: 70px;
+	height: 25px;
+	line-height: 20px;
+	border-radius: 5px;
+	background-color: rgba(30, 180, 240, 1);
+	color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Roboto;
+	outline: none;
+	padding: 0;
+
+}
+
+.close-font{
+    float: right;
+	width: 17px;
+	height: 17px;
+	opacity: 0.67;
+	cursor: pointer;
+}
+.foreright{
+	float: right;
+	width:970px;
+	margin:2px 5px;
+	height: 296px;
+	line-height: 20px;
+	color: rgba(79, 79, 79, 1);
+	font-size: 14px;
+	text-align: left;
+	font-family: Roboto;
+	border: 1px solid rgba(230, 230, 230, 1);
+}
+.foreright p{
+	text-align: center;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Roboto;
+    background-color: rgba(240, 247, 251, 1);
+    height: 35px;
+   line-height: 35px;
+}
+.foreleft{
+	float:left;
+	/*margin-left:5px;*/
+	margin:2px 0 0 5px;
+}
+.foreleft table{
+	width:290px;
+	border: 1px solid rgba(230, 230, 230, 1);
+}
+.foreleft table tr td{
+	border: 1px solid rgba(230, 230, 230, 1);
+}
+tr td:nth-child(1){
+	background-color: rgba(240, 247, 251, 1);
+}
+.forecontent{
+	text-indent: 10px;
+}
+.exportbtn {
+     width: 120px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(30, 180, 240, 1);
+    line-height: 35px;
+    margin-top: -33px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+.exportbtn a {
+    color: #fff;
+}

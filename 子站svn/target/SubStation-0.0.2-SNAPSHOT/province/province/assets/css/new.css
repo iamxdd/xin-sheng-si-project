@@ -1,0 +1,342 @@
+.main_title {
+    width: 60%;
+}
+
+.content-body_padding {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.right {
+    width: 24%;
+    margin-left: 0.5%;
+    float: left;
+    margin-top: 42px;
+}
+
+.content-right {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4580a1), to(#65b5dc));
+    margin-bottom: 50px;
+}
+
+.content-right_coun {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4580a1), to(#65b5dc));
+    padding-bottom: 20px;
+}
+
+#country {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f5f5f5))
+}
+
+.content-title_all {
+    background: #f5f5f5 !important;
+    border: 1px solid #ddd;
+    position: relative;
+    color: #000000;
+    bottom: 39px;
+}
+
+#citylist {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+#citylist li {
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 6px 0px 6px 10px;
+}
+
+.content-title_coun {
+    margin-top: 2px;
+    position: relative;
+    bottom: 39px;
+}
+
+.main-content_le {
+    margin-top: 3px;
+}
+
+input {
+    margin: 0 0 0 !important;
+}
+
+.content-title_all h3 {
+    text-align: left !important;
+    padding-left: 10px;
+}
+
+.content-title_right {
+    position: relative;
+    bottom: 39px;
+}
+
+.citylist_deputy {
+    padding-left: 8px;
+}
+
+.citylist_deputy li {
+    background: #dbf5cb !important;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon_position {
+    position: absolute;
+    right: 3%;
+}
+
+.nav-tabs_text li {
+    font-size: 12px;
+}
+
+.active a {
+    font-size: 12px;
+}
+
+.active th {
+    font-size: 16px;
+}
+
+.btn-lg {
+    padding: 5px 16px !important;
+}
+
+.layBtn__ {
+    /*margin-top: 20px;*/
+   margin:5px;
+}
+
+#richanggongzuopingjiabiao tr td {
+    padding: 5px 0;
+}
+
+.conditions span select {
+    height: 23px;
+}
+
+.conditions_time {
+    display: inline-block;
+    margin: 10px 0 20px 35px;
+    color: white;
+    font-size: 16px;
+}
+
+.main-content_ {
+    padding-left: 5px !important;
+    padding-right: 2px !important;
+}
+
+.conditions_p {
+    margin: -10px 0 10px 35px;
+    font-size: 16px;
+}
+
+.conditions_p select {
+    border-radius: 4px;
+}
+
+.conditions_day {
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.conditions_span {
+    font-size: 26px;
+    color: #ffffff;
+    padding: 0 8px;
+}
+
+#unit {
+    margin-top: 10px;
+}
+
+#category {
+    margin-top: 10px;
+}
+
+.textrightalign {
+    padding-bottom: 20px;
+}
+
+.textrightalign input {
+    height: 44px;
+    background: rgb(64, 181, 197);
+    border-radius: 9px;
+    border: 2px solid #2c699d;
+    width: 73px;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 auto;
+
+}
+
+.textrightalign_left {
+    width: 50%;
+    float: left;
+}
+
+.modal-body_button input {
+    margin: 0 auto !important;
+    height: 40px;
+    background: rgb(64, 181, 197);
+    border-radius: 9px;
+    border: 2px solid #2c699d;
+    width: 129px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.modal-body_button {
+    padding-bottom: 20px;
+    position: relative;
+    width: 129px;
+    margin: 0 auto;
+}
+
+a:focus {
+    outline: none;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
+}
+
+.content-left {
+    width: 100%;
+}
+
+.about_alert,.about_alert2{
+    visibility:hidden;
+    z-index: 99999999;
+    width: 26%;
+    height: 180px;
+    border: 1px solid #696a6b;
+    position: fixed;
+    top: 300px;
+    border-radius: 6px;
+    background: rgb(156, 150, 150);
+    left: 37%;
+    -moz-box-shadow: 5px 5px 13px #909090;
+    -webkit-box-shadow: 5px 5px 13px #909090;
+    box-shadow:5px 5px 13px #909090;
+}
+.alert_text,.alert_text2{
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.alert_button {
+    height: 80px;
+    width: 100%;
+    padding-left: 42%;
+    /*padding-top: 5px;*/
+}
+.alert_button2 {
+    height: 80px;
+    width: 100%;
+    /*padding-top: 5px;*/
+}
+.alert_button2 input {
+    height: 34px;
+    background: #ffffff;
+    border-radius: 9px;
+    border: 1px solid #737171;
+    width: 84px;
+    color: #737171;
+    font-size: 16px;
+}
+.alert_button input {
+    height: 34px;
+    background: #ffffff;
+    border-radius: 9px;
+    border: 1px solid #737171;
+    width: 84px;
+    color: #737171;
+    font-size: 16px;
+}
+
+.alert_title {
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #d2d2d2;
+    background: #737171;
+}
+#yunxingzhiliangtixitable_text{
+    display: none;
+    font-size: 18px;
+    margin-top: 33px;
+    color: red;
+}
+.loading-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 13;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-transition: .2s opacity linear;
+    transition: .2s opacity linear;
+    visibility: hidden;
+    opacity: 0;
+    z-index:99999;
+    width: 400px;
+    height: 500px;
+    background: #000000;
+}
+.loading-container.active {
+    opacity: 1;
+}
+.loading-container.visible {
+    visibility: visible;
+}
+.icon-sort-small-copy-copy{
+    font-size: 18px !important;
+}
+#scoreDetails p{
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+#richanggongzuopingjiabiao tr td{
+	vertical-align: middle;
+}

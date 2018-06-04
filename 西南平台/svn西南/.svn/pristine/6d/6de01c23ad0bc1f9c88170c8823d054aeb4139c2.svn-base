@@ -1,0 +1,47 @@
+var basePath = "../json/";
+//var apiPath = "http://10.190.1.110:5100/";
+//var apiPath="http://10.190.1.110:5000/";//杨环
+//var apiPath_a = "http://10.190.1.110:5000/";
+var apiPath="http://www.scnewair.cn:3392/";
+var	apiPath_a="http://www.scnewair.cn:3392/";
+var country = "http://106.37.208.228:8083/ForecastService.asmx/";
+window.pageConfig = {
+	"token": '',
+	"ajaxUrl": {
+
+		"getAirReportDrow_do": apiPath + "airReport/drow_do/get.do", //获取业务填色
+		"updateAirReportDrow": apiPath + "airReport/drow_do/update.do", //更新业务
+		"updatePicD": apiPath + "airReport/report_do/updatePicD.do", //图片上传
+		"updatePicS": apiPath + "airReport/report_do/updatePicS.do", //无辖区形势图上传
+		"updatePicM": apiPath + "airReport/report_do/updatePicM.do", //无辖区形势图上传
+		"sichuanGet": apiPath + "airReport/report_do/get.do", //获取四川数据
+		"deletePic": apiPath + "airReport/report_do/deletePic.do", //删除图片
+		"UploadProvinceData": country + "UploadProvinceData",
+		"sendChina": apiPath + "airReport/report_do/sendChina.do",//转发国家
+        "xinanupdate" :apiPath+"airReport/report_do/update.do",//西南区域数据上报
+		"getExpertsAssess": apiPath_a + "core/getExpertsAssess", //表格
+		"getForcastAudateCityDayData": apiPath_a + "core/getForcastAudateCityDayData", //堆叠图
+		"sichuanUpdate": apiPath + "airReport/drow_do/updateChina.do", //更新四川数据
+		getStation: `${apiPath}java/superset/get/getProvince`, // 获取站点
+		scatter: `${apiPath}supersetDraw/get/getPointPic`, // 点状射线图
+		getExpertPointPic: `${apiPath}supersetDraw/get/getExpertPointPic`, // 专家评估点状射线图
+	},
+	superset: {
+		url: 'http://172.16.1.156:5000/superset/explore/?form_data=',
+		end: '&standalone=true&height=200',
+		endAqi: '&standalone=true&height=400',
+		board: 'http://172.16.1.156:5000/dashboardmodelview/list'
+	}
+
+}
+
+$(function () {
+//	let boardUrl = window.pageConfig.superset.board
+//	let board = $(`<li>
+//    <a href=${boardUrl} target="view_window">
+//        <i class="iconfont icon-shujutongji"></i>
+//        <span>我的看板</span>
+//    </a>
+//</li>`)
+//	$('.sidebar>ul').append(board)
+})

@@ -1,0 +1,74 @@
+.head-control{
+	padding-bottom: 10px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    border-bottom: 1px solid #008dd2;
+    height: 40px;
+}
+.publicnav{
+	float:left;
+	height: 35px;
+}
+.spanword{
+	padding-left: 10px;
+	padding-right: 20px;
+}
+#rangeDatePicker{
+	display: inline-block;
+	margin-right: 20px;
+}
+.exportbtn{
+	width:120px;
+	height: 33px;
+	display: inline-block;
+	border-radius: 10px;
+	text-align: center;
+	background-color: rgba(30, 180, 240, 1);
+	line-height:35px;
+	color:#fff;
+	float: right;
+	cursor: pointer;
+}
+#datestart {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #BBBBBB;
+    display: inline-block;
+}
+.search{
+	width: 80px;
+	height: 30px;
+	line-height: 20px;
+	border-radius: 5px;
+	background-color: rgba(30, 180, 240, 1);
+	color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Roboto;
+	border:0
+}
+.writediv p{
+	float: right;
+	padding-right: 30px;
+}
+.tabledata {
+    width: 99%;
+    margin: 40px auto;
+}
+.table>thead>tr>td{
+    vertical-align: middle;
+    border-bottom: 1px solid #101010  !important;
+    text-align: center;   
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding: 3px!important;
+    text-align: center;
+    vertical-align: middle;
+}
+ table,table tr th, table tr td { border:1px solid #101010; }
+ table tr{
+ 	text-align: center;
+ }
+ .exportbtn a{
+	color:#fff
+}

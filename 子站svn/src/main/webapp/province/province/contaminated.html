@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>污染事件统计</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/jedate.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.lavalamp.css"/>
+    <link rel="stylesheet" href="assets/css/combo.select.css"/>
+    <link rel="stylesheet" href="assets/css/load.css"/>
+    <link rel="stylesheet" href="assets/css/contaminated.css"/>
+    <script src="assets/jq/jquery-2.1.0.min.js"></script>
+    <script src="assets/jq/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="content">
+    <!--头部 begin-->
+    <div class="row row_special">
+        <div class="col-md-12 header-content header-content_">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <ul class="header">
+                            <li><a href="test5.html">常规统计</a></li>
+                            <li><a href="test6.html">组合统计</a></li>
+                            <li><a href="test7.html">同比环比</a></li>
+                            <li><a href="test8.html">整编数据</a></li>
+                            <li><a href="test9.html">基础数据查询</a></li>
+                            <li><a href="test10.html">日报审核展示</a></li>
+                            <li><a href="test11.html">空间分布</a></li>
+                            <li><a href="test12.html">后向轨迹分析</a></li>
+                            <li><a href="test13.html">统计分析配置</a></li>
+                            <li><a href="test14.html">污染防治</a></li>
+                            <li class="active"><a href="test1.html">污染事件</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="row quality-control-menu">
+                <div class="col-md-12 quality-text">
+                <h3>查询分析
+                <i></i>
+                <span>&gt;污染事件</span>
+                </h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部 end-->
+    <!--内容-->
+    <div class="row all">
+        <div class="col-md-12 all_border">
+            <div class="row row_title">
+                <p>污染事件</p>
+            </div>
+            <div class="row conta_navi">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 conta_navigation conta_navigation_conta_body conta_navigation_active"
+                             onclick="forfind('conta_body')">
+                            污染事件判定
+                        </div>
+                        <div class="col-md-4 conta_navigation conta_navigation_conta_body2"
+                             onclick="forfind('conta_body2')">
+                            污染事件统计
+                        </div>
+                        <div class="col-md-4 conta_navigation conta_navigation_conta_body3"
+                             onclick="forfind('conta_body3')"
+                        >
+                            污染物最大浓度城市分布
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row conta_body_ conta_body">
+                <div class="col-md-12">
+                    <div class="row body_navi">
+                        <div class="col-md-2 navigation navigation_contami_regional navigation_contami"
+                             onclick="forwhat('contami_regional')">
+                            区域性污染判定
+                        </div>
+                        <div class="col-md-2 navigation navigation_contami_straw" onclick="forwhat('contami_straw')">
+                            秸秆焚烧影响判定
+                        </div>
+                        <div class="col-md-2 navigation navigation_contami_dust" onclick="forwhat('contami_dust')">
+                            沙尘影响判定
+                        </div>
+                    </div>
+                    <div class="row body_body">
+                        <div class="col-md-12 contami contami_regional">
+                            <div class="row">
+                                <p class="time_selected">
+                                    判定时间选择 :
+                                    <select id="time_change">
+                                        <option></option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table" id="regional">
+
+                                        </table>
+                                        <div class="responsive_button11 responsive_button">
+                                            <input type="button" value="保存" onclick="save()">
+                                        </div>
+                                        <div class="responsive_button">
+                                            <input type="button" value="导出" onclick="tableexport('regional')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 contami contami_straw">
+                            <div class="row">
+                                <p class="time_selected">
+                                    判定时间选择 :
+                                    <select id="time_change2">
+                                        <option></option>
+                                    </select>
+                                    <!--<input type="button" value="查询" onclick="forstraw()">-->
+                            </div>
+                            </p>
+                            <div class="row row_city_button">
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table" id="straw">
+
+                                        </table>
+                                        <div class="responsive_button11 responsive_button">
+                                            <input type="button" value="保存" onclick="savestraw()"></div>
+                                        <div class="responsive_button">
+                                            <input type="button" value="导出" onclick="tableexport('straw')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 contami contami_dust">
+                            <div class="row">
+                                <p class="time_selected">
+                                    判定时间选择 :
+                                    <select id="time_change3">
+                                        <option></option>
+                                    </select>
+                                    <!--<input type="button" value="查询" onclick="fordust()">-->
+                            </div>
+                            </p>
+                            <div class="row row_city_button2">
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table" id="dust">
+
+                                        </table>
+                                        <div class="responsive_button11 responsive_button">
+                                            <input type="button" value="保存" onclick="savedust()"></div>
+                                        <div class="responsive_button">
+                                            <input type="button" value="导出" onclick="tableexport('dust')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row conta_body_ conta_body2">
+                <div class="col-md-12">
+                    <div class="row body_navi2">
+                        <div class="col-md-2 navigation2 navigation2_contami_regional navigation2_contami"
+                             onclick="forwhat2('contami_regional')">
+                            区域性污染统计
+                        </div>
+                        <div class="col-md-2 navigation2 navigation2_contami_straw" onclick="forwhat2('contami_straw')">
+                            秸秆焚烧影响统计
+                        </div>
+                        <div class="col-md-2 navigation2 navigation2_contami_dust" onclick="forwhat2('contami_dust')">
+                            沙尘影响统计
+                        </div>
+                    </div>
+                    <div class="row body_body">
+                        <div class="col-md-12 contami2 contami_regional2">
+                            <div class="row">
+                                <div class="contami2_button_width">
+                                    <div class="contami2_button_">
+                                        <div class="contami2_button month contami2_button-active"
+                                             onclick="timechange('month')" data-index='月统计数据'>月统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami2_button quarter" onclick="timechange('quarter')"
+                                             data-index='季度统计数据'>季度统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami2_button middle_year" onclick="timechange('middle_year')"
+                                             data-index='半年统计数据'>半年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami2_button year" onclick="timechange('year')"
+                                             data-index='年统计数据'>年统计数据
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="time_selects">时间选择 :</p>
+                                <div class="old_time">
+                                    <select id="time_change4">
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <p class="time_text">至</p>
+                                <div class="now_time">
+                                    <select id="time_change5">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="target">
+                                    <div class="target_pm target_pm25-now">
+                                        当前年PM2.5的目标浓度值 :<input type="text" placeholder="当前年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pm10-now">
+                                        当前年PM10的目标浓度值 :<input type="text" placeholder="当前年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pm25-old">
+                                        去年PM2.5的目标浓度值 :<input type="text" placeholder="去年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pm10-old">
+                                        去年PM10的目标浓度值 :<input type="text" placeholder="去年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pms">
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="查询" onclick="forregional()" value="100"></div>
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="导出" onclick="tableexport('regional2')">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table" id="regional2">
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 contami2 contami_straw2">
+                            <div class="row">
+                                <div class="contami2_button_width">
+                                    <div class="contami2_button_">
+                                        <div class="contami3_button month2 contami3_button-active"
+                                             onclick="timechange2('month2')" data-index='月统计数据'>月统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami3_button quarter2" onclick="timechange2('quarter2')"
+                                             data-index='季度统计数据'>季度统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami3_button middle_year2" onclick="timechange2('middle_year2')"
+                                             data-index='半年统计数据'>半年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami3_button year2" onclick="timechange2('year2')"
+                                             data-index='年统计数据'>年统计数据
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="time_selects">时间选择 :</p>
+                                <div class="old_time">
+                                    <select id="time_change6">
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <p class="time_text2">至</p>
+                                <div class="now_time2">
+                                    <select id="time_change7">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="target">
+                                    <div class="target_pm target_pm25-now2">
+                                        PM2.5的目标浓度值 :<input type="text" placeholder="当前年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pm10-now2">
+                                        PM10的目标浓度值 :<input type="text" placeholder="当前年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pms">
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="查询" onclick="forstraw2()"></div>
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="导出" onclick="tableexport('straw2')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table" id="straw2">
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 contami2 contami_dust2">
+                            <div class="row">
+                                <div class="contami2_button_width">
+                                    <div class="contami2_button_">
+                                        <div class="contami4_button month3 contami4_button-active"
+                                             onclick="timechange3('month3')" data-index='月统计数据'>月统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami4_button quarter3" onclick="timechange3('quarter3')"
+                                             data-index='季度统计数据'>季度统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami4_button middle_year3" onclick="timechange3('middle_year3')"
+                                             data-index='半年统计数据'>半年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami2_button_">
+                                        <div class="contami4_button year3" onclick="timechange3('year3')"
+                                             data-index='年统计数据'>年统计数据
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="time_selects">时间选择 :</p>
+                                <div class="old_time">
+                                    <select id="time_change8">
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <p class="time_text3">至</p>
+                                <div class="now_time3">
+                                    <select id="time_change9">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="target">
+                                    <div class="target_pm target_pm25-now3">
+                                        PM2.5的目标浓度值 :<input type="text" placeholder="当前年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pm10-now3">
+                                        PM10的目标浓度值 :<input type="text" placeholder="当前年" value="100">
+                                    </div>
+                                    <div class="target_pm target_pms">
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="查询" onclick="fordust2()"></div>
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="导出" onclick="tableexport('dust2')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table" id="dust2">
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row conta_body_ conta_body3">
+                <div class="col-md-12">
+                    <div class="row body_navi2">
+                        <div class="col-md-2 navigation3 navigation3_timecount navigation3_contami"
+                             onclick="forwhat3('timecount')">
+                            时间段最大浓度统计
+                        </div>
+                        <div class="col-md-2 navigation3 navigation3_citycount" onclick="forwhat3('citycount')">
+                            时间段内城市最大浓度
+                        </div>
+                    </div>
+                    <div class="row body_body">
+                        <div class="col-md-12 contami3 timecount">
+                            <div class="row">
+                                <div class="contami2_button_width">
+                                    <div class="contami3_button_">
+                                        <div class="contami5_button month4 contami5_button-active"
+                                             onclick="timechange4('month4')" data-index='月统计数据'>月统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami5_button quarter4" onclick="timechange4('quarter4')"
+                                             data-index='季度统计数据'>季度统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami5_button middle_year4" onclick="timechange4('middle_year4')"
+                                             data-index='半年统计数据'>半年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami5_button year4" onclick="timechange4('year4')"
+                                             data-index='年统计数据'>年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami5_button soso" onclick="timechange4('soso')"
+                                             data-index='任意时间段'>任意时间段
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="time_selects">时间选择 :</p>
+                                <div class="old_time">
+                                    <select id="timecount_time1">
+                                        <option></option>
+                                    </select>
+                                    <input id="timeconutinfo" type="text"/>
+
+                                </div>
+                                <p class="time_text2">至</p>
+                                <div class="now_time2">
+                                    <select id="timecount_time2">
+                                        <option></option>
+                                    </select>
+                                    <input id="timeconutinfo2" type="text"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="target2">
+                                    <div class="target_pmss">
+                                        选择需要计算的参数 :
+                                        <select id="timecount_parameter">
+                                            <option>NO2</option>
+                                            <option>CO</option>
+                                            <option>O3</option>
+                                            <option>SO2</option>
+                                            <option>PM2.5</option>
+                                            <option>PM10</option>
+                                        </select>
+                                    </div>
+                                    <div class="target_pm target_pms">
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="查询" onclick="fortimecount()"></div>
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="导出" onclick="tableexport('timecount_table')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive table-responsivetimecount">
+                                        <table class="table" id="timecount_table">
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 contami3 citycount">
+
+                            <div class="row">
+                                <div class="contami2_button_width">
+                                    <div class="contami3_button_">
+                                        <div class="contami6_button month5 contami6_button-active"
+                                             onclick="timechange5('month5')" data-index='月统计数据'>月统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami6_button quarter5" onclick="timechange5('quarter5')"
+                                             data-index='季度统计数据'>季度统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami6_button middle_year5" onclick="timechange5('middle_year5')"
+                                             data-index='半年统计数据'>半年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami6_button year5" onclick="timechange5('year5')"
+                                             data-index='年统计数据'>年统计数据
+                                        </div>
+                                    </div>
+                                    <div class="contami3_button_">
+                                        <div class="contami6_button soso2" onclick="timechange5('soso2')"
+                                             data-index='任意时间段'>任意时间段
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="time_selects">时间选择 :</p>
+                                <div class="old_time">
+                                    <select id="citycount_time1">
+                                        <option></option>
+                                    </select>
+                                    <input id="citycountinfo" type="text"/>
+
+                                </div>
+                                <p class="time_text2">至</p>
+                                <div class="now_time2">
+                                    <select id="citycount_time2">
+                                        <option></option>
+                                    </select>
+                                    <input id="citycountinfo2" type="text"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="target2">
+                                    <div class="target_pmss">
+                                        选择需要计算的参数 :
+                                        <select id="citycount_parameter">
+                                            <option>NO2</option>
+                                            <option>CO</option>
+                                            <option>O3</option>
+                                            <option>SO2</option>
+                                            <option>PM2.5</option>
+                                            <option>PM10</option>
+                                        </select>
+                                    </div>
+                                    <div class="target_pm target_pms">
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="查询" onclick="forcitycount()"></div>
+                                        <div class="responsive_button_2">
+                                            <input type="button" value="导出" onclick="tableexport('citycount_table')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <div class="table-responsive table-responsivetimecount">
+                                        <table class="table" id="citycount_table">
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="loader7">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+<div class="about_alert_new">
+    <p class="alert_title">提示信息</p>
+    <p class="alert_text_new">这是一个测试弹框</p>
+    <div class="alert_button"><input type="button" value="确定" onclick="closed()"></div>
+</div>
+<!--区域性污染判定框-->
+<div class="modal fade" id="myModalscore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" style="width: 1200px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel" style="text-aligin:center">
+                    区域性污染判定表
+                </h4>
+            </div>
+            <div class="modal-body modal-body_">
+                <table class="table" id="regional_content">
+
+                </table>
+                <div class="modal-body_button">
+                    <input type="button" value="导出" onclick="tableexport('regional_content')"></div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--内容 end-->
+<!--      ========================================= 表格模板begin ========================================== -->
+<!--区域性污染判定-->
+<script id="regional_pollution" type="text/html">
+    <tr>
+        <th colspan="3" style="text-align: center">
+            区域性污染判定表
+        </th>
+    </tr>
+    <tr>
+        <td>日期</td>
+        <td>污染城市个数及详情</td>
+        <td>是否为区域性污染</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.TimePoint==undefined?'-':value.TimePoint.substring(0,10)}}</td>
+        <td><a onclick='regionalcontent({{i}})' data-toggle="modal"
+               data-target="#myModalscore">{{value.CountNUM==undefined?'-':value.CountNUM+"个城市轻度及以上污染"}}</a></td>
+        <td><span>
+            <input id='' class='regional_yes' type="checkbox" name="regional_yes"
+                   value={{value.TimePoint.substring(0,10)}}>
+            判定为区域性污染</span></td>
+    </tr>
+    {{/each}}
+</script>
+<!--区域性污染判定-->
+<!--区域性污染判定详情表-->
+<script id="regionalcontent_pollution" type="text/html">
+    <tr>
+        <th colspan="11" style="text-align: center">
+            区域性污染判定详情表({{list[0].timepoint.substring(0,10)}})
+        </th>
+    </tr>
+    <tr>
+        <td>城市</td>
+        <td>日期</td>
+        <td>SO2</td>
+        <td>NO2</td>
+        <td>O3</td>
+        <td>CO</td>
+        <td>PM2.5</td>
+        <td>PM10</td>
+        <td>AQI</td>
+        <td>主要污染物</td>
+        <td>空气质量类别</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.cityName==undefined?'-':value.cityName}}</td>
+        <td>{{value.timepoint==undefined?'-':value.timepoint.substring(0,10)}}</td>
+        <td>{{value.SO2==undefined?'-':value.SO2}}</td>
+        <td>{{value.NO2==undefined?'-':value.NO2}}</td>
+        <td>{{value.O3==undefined?'-':value.O3}}</td>
+        <td>{{value.CO==undefined?'-':value.CO}}</td>
+        <td>{{value.PM2_5==undefined?'-':value.PM2_5}}</td>
+        <td>{{value.PM10==undefined?'-':value.PM10}}</td>
+        <td>{{value.AQI==undefined?'-':value.AQI}}</td>
+        <td>{{value.primaryPollutant==undefined?'-':value.primaryPollutant}}</td>
+        <td>{{value.level==undefined?'-':value.level}}</td>
+    </tr>
+    {{/each}}
+</script>
+<!--区域性污染判定详情表-->
+<!--秸秆焚烧影响判定-->
+<script id="straw_pollution" type="text/html">
+    <tr>
+        <th colspan="10" style="text-align: center">
+            秸秆焚烧影响判定表
+        </th>
+    </tr>
+    <tr>
+        <td>日期</td>
+        <td>SO2</td>
+        <td>NO2</td>
+        <td>O3</td>
+        <td>CO</td>
+        <td>PM2.5</td>
+        <td>PM10</td>
+        <td>是否受秸秆焚烧影响</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.timepoint==undefined?'-':value.timepoint.substring(0,10)}}</td>
+        <td>{{value.SO2==undefined?'-':value.SO2}}</td>
+        <td>{{value.NO2==undefined?'-':value.NO2}}</td>
+        <td>{{value.O3==undefined?'-':value.O3}}</td>
+        <td>{{value.CO==undefined?'-':value.CO}}</td>
+        <td>{{value.PM2_5==undefined?'-':value.PM2_5}}</td>
+        <td>{{value.PM2_5==undefined?'-':value.PM10}}</td>
+        <td><span>
+            <input class='straw_yes' type="checkbox" name="straw_yes" value={{value.timepoint.substring(0,10)}}>
+            受秸秆焚烧影响</span></td>
+    </tr>
+    {{/each}}
+</script>
+<!--秸秆焚烧影响判定-->
+<!--沙尘影响判定-->
+<script id="dust_pollution" type="text/html">
+    <tr>
+        <th colspan="11" style="text-align: center">
+            沙尘影响判定表
+        </th>
+    </tr>
+    <tr>
+        <td>日期</td>
+        <td>SO2</td>
+        <td>NO2</td>
+        <td>O3</td>
+        <td>CO</td>
+        <td>PM2.5</td>
+        <td>PM10</td>
+        <td>PM2.5/PM10</td>
+        <td>是否受沙尘影响判定</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.timepoint==undefined?'-':value.timepoint.substring(0,10)}}</td>
+        <td class="dust_active" data-number={{value.SO2==undefined?'-':value.SO2}}>
+            {{value.SO2==undefined?'-':value.SO2}}
+        </td>
+        <td class="dust_active" data-number={{value.NO2==undefined?'-':value.NO2}}>
+            {{value.NO2==undefined?'-':value.NO2}}
+        </td>
+        <td class="dust_active" data-number={{value.O3==undefined?'-':value.O3}}>{{value.O3==undefined?'-':value.O3}}
+        </td>
+        <td class="dust_active" data-number={{value.CO==undefined?'-':value.CO}}>{{value.CO==undefined?'-':value.CO}}
+        </td>
+        <td class="dust_active" data-number={{value.PM2_5==undefined?'-':value.PM2_5}}>
+            {{value.PM2_5==undefined?'-':value.PM2_5}}
+        </td>
+        <td class="dust_active" data-number={{value.PM10==undefined?'-':value.PM10}}>
+            {{value.PM10==undefined?'-':value.PM10}}
+        </td>
+        <td class="dust_active" data-number={{value.PM2_5PM10==undefined?'-':value.PM2_5PM10/100}}>
+            {{value.PM2_5PM10==undefined?'-':value.PM2_5PM10+'%'}}
+        </td>
+        <td><span>
+            <input class='dust_yes' type="checkbox" name="dust_yes" value={{value.timepoint.substring(0,10)}}>
+            受沙尘影响判定</span></td>
+    </tr>
+    {{/each}}
+</script>
+<!--沙尘影响判定-->
+<!--区域性污染统计-->
+<script id="regional_pollution2" type="text/html">
+    <tr>
+        <th colspan="22" style="text-align: center">
+            四川省{{timestart}}-{{timeend}}区域性污染{{name}}
+        </th>
+    </tr>
+    <tr>
+        <td rowspan="2">{{timetitle}}</td>
+        <td colspan="2">区域性污染天数及同比</td>
+        <td colspan="4">区域性污染浓度及同比</td>
+        <td colspan="2">常态浓度</td>
+        <td colspan="2">较常态浓度升高倍数</td>
+        <td colspan="4">为年均浓度贡献及同比去年</td>
+        <td colspan="4">在年均浓度污染负荷及同比去年</td>
+        <td colspan="2">污染强度变化</td>
+    </tr>
+    <tr>
+        <td>天</td>
+        <td>天</td>
+        <td>ug/m³(PM2.5)</td>
+        <td>%(PM2.5)</td>
+        <td>ug/m³(PM10)</td>
+        <td>%(PM10)</td>
+        <td>ug/m³(PM2.5)</td>
+        <td>ug/m³(PM10)</td>
+        <td>倍(PM2.5)</td>
+        <td>倍(PM10)</td>
+        <td>ug/m³(PM2.5)</td>
+        <td>%(PM2.5)</td>
+        <td>ug/m³(PM10)</td>
+        <td>%(PM10)</td>
+        <td>%(PM2.5)</td>
+        <td>%(PM2.5)</td>
+        <td>%(PM10)</td>
+        <td>%(PM10)</td>
+        <td>PM2.5强度变化</td>
+        <td>PM10强度变化</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.monthTime==undefined?'-':value.monthTime}}</td>
+        <td>{{value.areapollutiondays==undefined?'-':value.areapollutiondays}}</td>
+        <td>{{value.YOYdays==undefined?'-':value.YOYdays}}</td>
+        <td>{{value.avgpm2_5==undefined?'-':value.avgpm2_5.toFixed(2)}}</td>
+        <td>{{value.YOYpm2_5==undefined?'-':value.YOYpm2_5}}</td>
+        <td>{{value.avgpm10==undefined?'-':value.avgpm10.toFixed(2)}}</td>
+        <td>{{value.YOYpm10==undefined?'-':value.YOYpm10}}</td>
+        <td>{{value.normalpm2_5==undefined?'-':value.normalpm2_5.toFixed(2)}}</td>
+        <td>{{value.normalpm10==undefined?'-':value.normalpm10.toFixed(2)}}</td>
+        <td>{{value.pm2_5normaltimes==undefined?'-':value.pm2_5normaltimes.toFixed(2)}}</td>
+        <td>{{value.pm10normaltimes==undefined?'-':value.pm10normaltimes.toFixed(2)}}</td>
+        <td>{{value.Mpm2_5contribute==undefined?'-':value.Mpm2_5contribute.toFixed(2)}}</td>
+        <td>{{value.pm2_5Cgrowthtimes==undefined?'-':value.pm2_5Cgrowthtimes}}</td>
+        <td>{{value.Mpm10contribute==undefined?'-':value.Mpm10contribute.toFixed(2)}}</td>
+        <td>{{value.pm10contributetimes==undefined?'-':value.pm10contributetimes}}</td>
+        <td>{{value.Mpm2_5load==undefined?'-':value.Mpm2_5load}}</td>
+        <td>{{value.pm2_5loadtimes==undefined?'-':value.pm2_5loadtimes}}</td>
+        <td>{{value.Mpm10load==undefined?'-':value.Mpm10load}}</td>
+        <td>{{value.pm10loadtimes==undefined?'-':value.pm10loadtimes}}</td>
+        <td>{{value.pm2_5Mstrength==undefined?'-':value.pm2_5Mstrength.toFixed(2)}}</td>
+        <td>{{value.pm10Mstrength==undefined?'-':value.pm10Mstrength.toFixed(2)}}</td>
+    </tr>
+    {{/each}}
+
+</script>
+<!--区域性污染统计-->
+<!--秸秆焚烧影响统计-->
+<script id="straw2_pollution2" type="text/html">
+    <tr>
+        <th colspan="9" style="text-align: center">
+            {{timestart}}-{{timeend}}四川省受秸秆焚烧影响{{name}}
+        </th>
+    </tr>
+    <tr>
+        <td rowspan="2">{{timetitle}}</td>
+        <td colspan="2">焚烧期间浓度(单位:ug/m³)</td>
+        <td colspan="2">非焚烧期间浓度(单位:ug/m³)</td>
+        <td colspan="2">焚烧期间较非焚烧期间上升(单位:倍)</td>
+        <td colspan="2">为全省年浓度贡献(单位：%)</td>
+    </tr>
+    <tr>
+        <td>2.5</td>
+        <td>PM10</td>
+        <td>PM2.5</td>
+        <td>PM10</td>
+        <td>PM2.5</td>
+        <td>PM10</td>
+        <td>PM2.5</td>
+        <td>PM10</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.timepoint==undefined?'-':value.timepoint}}</td>
+        <td>{{value.burnpm2_5M==undefined?'-':value.burnpm2_5M.toFixed(2)}}</td>
+        <td>{{value.burnpm10M==undefined?'-':value.burnpm10M.toFixed(2)}}</td>
+        <td>{{value.noburnpm2_5M==undefined?'-':value.noburnpm2_5M.toFixed(2)}}</td>
+        <td>{{value.noburnpm10M==undefined?'-':value.noburnpm10M.toFixed(2)}}</td>
+        <td>{{value.burnpm2_5T==undefined?'-':(value.burnpm2_5T*1).toFixed(2)}}</td>
+        <td>{{value.burnpm10T==undefined?'-':(value.burnpm10T*1).toFixed(2)}}</td>
+        <td>{{value.countpm2_5M==undefined?'-':value.countpm2_5M}}</td>
+        <td>{{value.countpm10M==undefined?'-':value.countpm10M}}</td>
+    </tr>
+    {{/each}}
+
+</script>
+<!--秸秆焚烧影响统计-->
+<!--沙尘影响统计-->
+<script id="dust2_pollution2" type="text/html">
+    <tr>
+        <th colspan="9" style="text-align: center">
+            {{timestart}}-{{timeend}}四川省受沙尘影响{{name}}
+        </th>
+    </tr>
+    <tr>
+        <td rowspan="2">{{timetitle}}</td>
+        <td colspan="2">为全省年均浓度贡献(单位:%)</td>
+    </tr>
+    <tr>
+        <td>PM2.5</td>
+        <td>PM10</td>
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.timepoint==undefined?'-':value.timepoint.substring(0,10)}}</td>
+        <td>{{value.countpm2_5M==undefined?'-':value.countpm2_5M}}</td>
+        <td>{{value.countpm10M==undefined?'-':value.countpm10M}}</td>
+    </tr>
+    {{/each}}
+
+</script>
+<!--沙尘影响统计-->
+<!--时间段最大浓度统计-->
+<script id="timecountable" type="text/html">
+    <tr>
+        <th colspan="13" style="text-align: center">
+            {{time22}}-{{time23}}年全省{{title}}最大{{name}}浓度及同比情况
+        </th>
+    </tr>
+    <tr>
+        <td>城市</td>
+        <td>监测时间</td>
+        <td>{{name}}</td>
+        <td>空气质量类别</td>
+        <td>主要污染物</td>
+        <td>城市</td>
+        <td>监测时间</td>
+        <td>{{name}}</td>
+        <td>空气质量类别</td>
+        <td>主要污染物</td>
+        <td>月份同比</td>
+
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.cityName==undefined?'-':value.cityName}}</td>
+        <td>{{value.timepoint==undefined?'-':value.timepoint.substring(0,10)}}</td>
+        <td>{{value.def==undefined?'-':value.def}}</td>
+        <td>{{value.airlevel==undefined?'-':value.airlevel}}</td>
+        <td>{{value.primaryPollutant==undefined?'-':value.primaryPollutant}}</td>
+        <td>{{value.ocityName==undefined?'-':value.ocityName}}</td>
+        <td>{{value.otimepoint==undefined?'-':value.otimepoint.substring(0,10)}}</td>
+        <td>{{value.omaxdata==undefined?'-':value.omaxdata}}</td>
+        <td>{{value.oairlevel==undefined?'-':value.oairlevel}}</td>
+        <td>{{value.oprimaryPollutant==undefined?'-':value.oprimaryPollutant}}</td>
+        <td>{{value.YOYmax==undefined?'-':value.YOYmax+'%'}}</td>
+    </tr>
+    {{/each}}
+</script>
+<!--时间段最大浓度统计-->
+<!--时间段内城市最大浓度-->
+<script id="citycountable" type="text/html">
+    <tr>
+        <th colspan="13" style="text-align: center">
+            {{time22}}-{{time23}}年全省{{title}}最大{{name}}浓度及同比情况
+        </th>
+    </tr>
+    <tr>
+        <td>城市</td>
+        <td>监测时间</td>
+        <td>{{name}}</td>
+        <td>空气质量类别</td>
+        <td>主要污染物</td>
+        <td>监测时间</td>
+        <td>{{name}}</td>
+        <td>空气质量类别</td>
+        <td>主要污染物</td>
+        <td>城市同比</td>
+
+    </tr>
+    {{each list as value i}}
+    <tr>
+        <td>{{value.cityName==undefined?'-':value.cityName}}</td>
+        <td>{{value.timepoint==undefined?'-':value.timepoint.substring(0,10)}}</td>
+        <td>{{value.def==undefined?'-':value.def}}</td>
+        <td>{{value.airlevel==undefined?'-':value.airlevel}}</td>
+        <td>{{value.primaryPollutant==undefined?'-':value.primaryPollutant}}</td>
+        <td>{{value.otimepoint==undefined?'-':value.otimepoint.substring(0,10)}}</td>
+        <td>{{value.omaxdata==undefined?'-':value.omaxdata}}</td>
+        <td>{{value.oairlevel==undefined?'-':value.oairlevel}}</td>
+        <td>{{value.oprimaryPollutant==undefined?'-':value.oprimaryPollutant}}</td>
+        <td>{{value.YOYmax==undefined?'-':value.YOYmax+'%'}}</td>
+    </tr>
+    {{/each}}
+</script>
+<!--时间段内城市最大浓度-->
+
+<!--      ========================================= 表格模板end ========================================== -->
+
+</div>
+
+<script src="assets/echart/echarts.common.min.js"></script>
+<script src="assets/jq/jquery.lavalamp.min.js"></script>
+<script src="assets/jq/jedate.min.js"></script>
+<script src="assets/jq/template.js"></script>
+<script src="assets/jq/jquery.combo.select.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/request.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/contaminated.js"></script>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    jeDate({
+        dateCell: "#timeconutinfo",
+        format: "YYYY-MM-DD",
+        isinitVal: true,
+        isTime: true, //isClear:false,
+        minDate: "2014-01-01"
+        //okfun:function(val){alert(val)}
+    });
+    jeDate({
+        dateCell: "#timeconutinfo2",
+        format: "YYYY-MM-DD",
+        isinitVal: true,
+        isTime: true, //isClear:false,
+        minDate: "2014-01-01"
+        //okfun:function(val){alert(val)}
+    });
+    jeDate({
+        dateCell: "#citycountinfo",
+        format: "YYYY-MM-DD",
+        isinitVal: true,
+        isTime: true, //isClear:false,
+        minDate: "2014-01-01"
+        //okfun:function(val){alert(val)}
+    });
+    jeDate({
+        dateCell: "#citycountinfo2",
+        format: "YYYY-MM-DD",
+        isinitVal: true,
+        isTime: true, //isClear:false,
+        minDate: "2014-01-01"
+        //okfun:function(val){alert(val)}
+    });
+    search()
+    search2()
+    search3()
+    search4()
+    search5()
+    search6()
+    search7()
+    search8()
+</script>
+</body>
+</html>

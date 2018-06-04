@@ -1,0 +1,17 @@
+.common-loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(214, 214, 214, 0.3);
+    text-align: center;
+}
+.common-loading .img {
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 30px;
+    width: 30px;
+    background: url(../../img/bg/loadding.gif);
+    background-size: contain;
+}

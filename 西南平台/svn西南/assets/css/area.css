@@ -1,0 +1,528 @@
+/*时间选择器重置样式*/
+
+.date-select {
+  margin-top: 10px;
+  width: 140px;
+  height: 26px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*条件选择*/
+
+.bottomdivide {
+  margin-bottom: 10px;
+}
+
+.gas-condition-select {
+  height: 30px;
+}
+
+.gas-condition-select>div {
+  height: auto;
+  /*overflow: hidden;*/
+}
+
+.gas-condition-select li {
+  margin-right: 5px;
+  width: 80px;
+  height: 26px;
+  font-size: 12px;
+  color: white;
+  line-height: 26px;
+  text-align: center;
+  background-color: rgba(2, 154, 227, 1);
+}
+
+.area-select {
+  border-radius: 4px;
+}
+
+.gas-condition-select .area-select>div:nth-child(1) {
+  width: 170px;
+}
+
+.gas-condition-select .area-select>div:nth-child(2) {
+  width: 100px;
+}
+
+.gas-condition-select .area-select>div {
+  float: left;
+}
+
+.area-select .dropdown {
+  background: none;
+  position: relative;
+  top: 2px;
+  /* background: rgba(2, 154, 227, 1);*/
+}
+
+.area-select .dropdown button {
+  border-radius: 0;
+}
+
+.area-select .active {
+  background-color: rgba(0, 54, 80, 1) !important;
+}
+
+.area-select .dropdown .title {
+  text-align: center;
+  display: inline-block;
+  width: 86px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  line-height: 26px;
+}
+
+.area-select .dropdown-menu {
+  top: 18px;
+  left: 4px;
+  background: none;
+  border: none;
+}
+
+.caret {
+  position: absolute;
+  right: 2px;
+  top: 12px;
+  z-index: 200;
+  color: white;
+}
+
+.area-title .caret {
+  position: absolute;
+  right: 2px;
+  top: 8px;
+  z-index: 200;
+  color: #10aefc;
+}
+
+.area-title .multiple-title {
+  text-align: left;
+  font-size: 16px;
+}
+
+.area-select .dropdown-menu li {
+  width: 100px;
+}
+
+.area-select .dropdown-menu li:hover {
+  cursor: pointer;
+}
+
+.area-select .btn {
+  width: 100px;
+  height: 26px;
+  line-height: 12px;
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+  background: rgba(2, 154, 227, 1);
+  color: white;
+}
+
+/*收缩框样式*/
+
+.box-body li {
+  margin: 5px;
+  color: #003650;
+  background-color: rgba(224, 229, 232, 1);
+  text-align: center;
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+}
+
+.primary-btn li:hover {
+  cursor: pointer;
+  color: white;
+  background: #003650;
+}
+
+.day-hour>div {
+  width: 50%;
+  height: 150px;
+  overflow-y: auto;
+  float: left;
+}
+
+.single>div {
+  height: 400px;
+}
+
+.left li {
+  float: left;
+}
+
+.condition2 li {
+  width: 124px;
+}
+
+.condition3 li {
+  width: 44px;
+}
+
+.condition4 li {
+  width: 58px;
+}
+
+.control-sidebar .primary-btn .active {
+  background-color: rgba(0, 54, 80, 1);
+  color: #fff;
+}
+
+.hour-temp {
+  display: none;
+}
+
+.forbid:hover {
+  cursor: not-allowed !important;
+  background: rgba(224, 229, 232, 1) !important;
+  color: #003650 !important;
+}
+
+/*收缩框样式结束*/
+
+.select2-results {
+  font-size: 12px;
+}
+
+.with-right {
+  margin-right: 20px;
+}
+
+.city-select>div {
+  float: left;
+  width: 92.6px;
+  background: white;
+  height: 30px;
+  border-radius: 0;
+}
+
+.city-select .title {
+  display: inline-block;
+  width: 100%;
+  height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.city-select .dropdown li:hover {
+  background-color: rgba(0, 54, 80, 1);
+  color: white;
+}
+
+.center {
+  margin: 0 10px;
+}
+
+.city-select>div .caret {
+  color: #222;
+}
+
+.city-select>div li:hover {
+  cursor: pointer;
+}
+
+.city-select>div button {
+  padding: 2px;
+  width: 80px;
+  background: white;
+  height: 22px;
+  line-height: 22px;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 !important;
+}
+
+.city-select .dropdown-menu {
+  width: 100px;
+}
+
+.select2-search__field,
+.select2-search {
+  display: none !important;
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+.map-container {
+  margin: auto;
+  position: absolute;
+  top: 57px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-width: 800px;
+  height: auto;
+  text-align: center;
+}
+
+.area-title {
+  padding: 1px 10px;
+}
+
+.area-title p {
+  padding-top: 4px;
+}
+
+.area-title .dropdown {
+  padding: 2px 4px 3px 4px;
+  background: #10aefc;
+  border-radius: 14px;
+}
+
+.area-title .dropdown-menu {
+  padding-top: 16px;
+  top: 10px;
+  width: 88px;
+  background: #10aefc;
+  border: none;
+  z-index: 100;
+}
+
+.area-title .dropdown-menu li {
+  width: 88px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+.area-title .dropdown-menu li:hover {
+  background: white;
+  color: #10aefc;
+  cursor: pointer;
+}
+
+.area-title .dropdown {
+  float: right;
+}
+
+.area-title .btn {
+  width: 80px;
+  height: 20px;
+  font-size: 12px;
+  color: #10aefc;
+  background: white;
+  line-height: 0;
+  border-radius: 10px;
+  position: relative;
+  z-index: 200;
+}
+
+.map-container>div {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container>div>div {
+  /* margin: 1px 50px;*/
+  margin: 4px 20px 0 0;
+  height: 48%;
+  width: auto;
+  display: inline-block;
+  border: 1px solid #003650;
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+}
+
+.content-wrapper .multiple-model p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #003650;
+  text-align: center;
+}
+
+.map-container .img-container {
+  margin: auto;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-container>div div img {
+  margin: -1px;
+  height: 90%;
+  border: none;
+}
+
+.multiple-model {
+  display: none;
+}
+
+/*折线图*/
+
+.content-wrapper {
+  padding: 10px 20px;
+}
+
+.head-control {
+  padding-bottom: 10px;
+  margin: 10px 0 20px 0;
+  position: relative;
+  border-bottom: 1px solid #008dd2;
+}
+
+.time-control {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+
+.gas,
+.water {
+  width: 1300px;
+  overflow: hidden;
+}
+
+.gas>div,
+.water>div {
+  overflow: hidden;
+}
+
+.model-container {
+  padding-left: 200px;
+  display: none;
+}
+
+/*.model-container span{
+    margin:0 4px 0 20px;
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}*/
+
+.modelA {
+  /* background: red;*/
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.modelB {
+  /* background: green;*/
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.modelC {
+  /*background: blue;*/
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.modelD {
+  /*    background: #FF9900;*/
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.form-group {
+  float: right;
+}
+
+.city-title {
+  font-size: 14px;
+}
+
+.gas label,
+.water label,
+.head-control label {
+  margin-left: 14px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 0;
+  /* color: #000000;*/
+}
+
+.time-title {
+      color: white;
+    /* margin: 3px 3px 0 0; */
+    display: inline-block;
+   
+}
+
+#gasContainer,
+#waterContainer {
+  clear: both;
+}
+
+#gasContainer>div,
+#waterContainer>div {
+  height: 300px;
+  display: none;
+}
+p.time-title{
+	    margin-top: 10px;
+    margin-bottom: -2px;
+}
+.exportable{
+display: inline-block;
+width: 120px;
+height: 30px;
+line-height: 30px;
+border-radius: 5px;
+background-color: rgba(0, 154, 216, 1);
+color: rgba(255, 255, 255, 1);
+font-size: 14px;
+text-align: center;
+font-family: Microsoft Yahei;
+cursor: pointer;
+
+}
+.aqiBox iframe{
+	height: 410px !important;
+}
+.aqiBox {
+	margin-bottom: 20px;
+}
+.pollutionBox p,.airBox p,.pollutionBox-btn ,.airBox-btn{
+	display: inline-block;
+}
+.pollutionBox ,.airBox{
+	position:relative;
+}
+.pollutionBox-btn ,.airBox-btn{
+    position: absolute;
+    top: -5px;
+    left: 166px;
+}
+.tab-year{
+	display: inline-block;
+	color:black;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	cursor: pointer;
+
+}
+.selcted-year{
+	color:#008DD2;
+}

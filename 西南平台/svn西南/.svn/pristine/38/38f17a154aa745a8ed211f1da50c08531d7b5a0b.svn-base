@@ -1,0 +1,61 @@
+.HNO3Content,.ECContent{
+width: 1300px;
+height: 182px;
+border:1px solid #CCCCCC;
+}
+.warp-pm{
+	display: inline-block;
+	position: relative;
+}
+.time-control-new{
+	position: absolute;
+    left: 118px;
+    display: inline-block;
+    top: -5px;
+}
+ .echar-left{
+ 
+width: 290px;
+
+ }
+ .echar-right{
+
+    width: 988px;
+    margin-left: 17px;
+
+ }
+.pmContent{
+	    width: 1300px
+}
+.pmContent div{
+	display: inline-block;
+}
+
+.checkBtn,.radioBtn{
+  display: inline-block;
+  width: 65px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0 0 10px 6px;
+  background-color: #003650;
+  color: #fff;
+  border-radius: 5px !important;
+}
+.checkBtn.active,.radioBtn.active{
+  color: #000;
+  background-color: #fff;
+}
+.seleceBtn{
+  	width: 88px;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 0 10px 6px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #003650;
+}
+.input-sm{
+	border-radius: 8px !important;
+}

@@ -1,0 +1,146 @@
+.HNO3Content,.ECContent{
+width: 1300px;
+height: 300px;
+}
+.warpone{
+	    padding-right: 30px;
+    margin-bottom: 20px;
+    width: 1300px;
+}
+.warp-pm{
+	display: inline-block;
+	position: relative;
+}
+.time-control-new{
+	position: absolute;
+    right: 0px;
+    display: inline-block;
+   
+}
+.bordess{
+	border-bottom: 3px solid #4F81BD;
+}
+.spantext{
+	    width: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.nes-span{
+	margin-left: 12px;
+}
+.spantext-new{
+	   width: 56px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+}
+ #areaTBody tr td{
+ 	text-align: center;
+ 	vertical-align: middle;
+ }
+.pmContent{
+	    width: 1300px;
+	   
+}
+
+.warptable{
+	width: 1300px;
+    margin-bottom: 40px;
+
+	 
+}
+#areaTBody{
+	border:2px solid black;
+	    border-top:none;
+}
+.warptable .table{
+	margin-bottom: 0px;
+}
+.pmContent div{
+	display: inline-block;
+}
+.eightrow {
+    width: 366px !important;
+    background: #10aefc;
+}
+.fixed .control-sidebar {
+    top: 100px !important;
+   
+}
+.checkBtn,.radioBtn{
+  display: inline-block;
+  width: 65px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0 0 10px 6px;
+  background-color: #003650;
+  color: #fff;
+  border-radius: 5px !important;
+}
+.checkBtn.active,.radioBtn.active{
+  color: #000;
+  background-color: #fff;
+}
+.seleceBtn{
+  	width: 88px;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 0 10px 6px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #003650;
+}
+.input-sm{
+	border-radius: 8px !important;
+}
+
+
+
+
+
+
+.headera{
+	height: 23px;
+}
+.content-one-left{
+	width: 1000px;
+}
+.content-one-right{
+  width: 290px;
+  height: 290px;
+}
+.HNO3Content div,.ECContent div{
+	display: inline-block;
+}
+.mainContent{
+    width: 1300px;
+    overflow: hidden;
+}
+.mainContent>div{
+    display: flex;
+    flex-direction: row;
+}
+.bg-div{
+	width: 1300px;
+	height: 10px;
+	margin-top: 6px;
+}
+.th-index{
+	    width: 115px;
+    height: 50px;
+    text-align: center;
+}
+.operate-wrapper{
+	background-color: #fff;
+}
+table, table tr th, table tr td {
+    border: 1px solid #bbb;
+}
+.table > thead > tr > th {
+    border: 2px solid black !important;
+    background-color: #E9F0F6;
+    font-size: 16px;
+}

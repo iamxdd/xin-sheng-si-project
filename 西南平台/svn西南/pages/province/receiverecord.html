@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>接收记录</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap-datepicker.min.css">
+		 <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+    	<link rel="stylesheet" href="../../assets/css/iconfont.css">
+		<link rel="stylesheet" href="../../assets/css/AdminLTE.css">
+		<link rel="stylesheet" href="../../assets/css/skins/_all-skins.css">
+		<link rel="stylesheet" href="../../assets/css/Processmonitoring.css">
+		<!-- 引入bootstrap-table样式 -->
+		<link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+	</head>
+	<body class="hold-transition skin-blue fixed sidebar-mini" style="overflow-y: hidden">
+		<div class="wrapper"  id="withOutLeft">
+			<header class="main-header">
+				<!-- Logo -->
+				<div class="logo"></div>
+				<!-- Header Navbar: style can be found in header.less -->
+				<nav class="navbar navbar-static-top">
+					<div class="navbar-custom-menu">
+
+					</div>
+				</nav>
+			</header>
+
+			<!-- =============================================== -->
+
+			<!-- Left side column. contains the sidebar -->
+
+			<aside class="main-sidebar">
+				<section class="sidebar">
+					<ul class="sidebar-menu" data-widget="tree">
+						
+					</ul>
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+			
+			 <div class="content-wrapper operate-wrapper">
+               <div class="head-control">
+               	 <p class='processp'>接收记录</p>
+              	</div>
+              	
+              	<div class="datasearch">
+              			<span class="dataspan spanword">数据来源:</span>
+              			<select class="datafrom" onchange="serachUser()">
+								<option value="0">全部</option>
+								<option value="1">优</option>
+								<option value="2">优-良</option>
+								<option value="3">良</option>
+						</select>
+						<div class="input-daterange input-group bottomdivide" id="rangeDatePickerstart">
+			             <span class="spanword">预报开始日期:</span><input id="datestart" type="text" class="input-sm" name="startime" />
+			            </div>
+			            <div class="input-daterange input-group bottomdivide" id="rangeDatePickerend">
+			             <span class="spanword">预报结束日期:</span><input id="dateend" type="text" class="input-sm" name="endtime" />
+			            </div>
+			            <span class="spanword">状态:</span>
+			            <select class="datastate" onchange="serachUser()">
+								<option value="0">全部</option>
+								<option value="1">成功</option>
+								<option value="2">失败</option>
+						</select>
+						<button class="btn btn-primary btn_search" onclick="serachUser()"/>
+							<i class="iconfont icon-chaxun"></i>
+							搜索
+						</button>
+						
+              	</div>
+              	<div class="tabeldata">
+              		<table id="table"></table>
+              	</div>
+              		
+              	</div>
+		</div>
+	</body>
+</html>
+ 	<script src="../../assets/js/jq/jquery-2.1.0.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap-datepicker.min.js"></script>
+    <!-- bootstrap-table.min.js -->
+	<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+	<!-- 引入中文语言包 -->
+	<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/bootstrap/locales/bootstrap-datepicker.zh-CN.min.js" charset="UTF-8"></script>
+    <script src="../../assets/js/date/date.js"></script>
+    <script src="../../assets/js/request.js"></script>
+   <script src="../../assets/js/url.js"></script>
+      <script src='../../assets/js/page/receiverecord.js'></script>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>预报评估</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" href="../../img/bg/logo.png">
+    <!-- Bootstrap 3.3.7 -->
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../assets/css/iconfont.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../assets/css/AdminLTE.css">
+    <link rel="stylesheet" href="../../plugins/slideicon/slide.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../assets/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="../../assets/css/Evaluationsummary.css">
+    <link rel="stylesheet" href="../../assets/js/iCheck/all.css">
+    <link rel="stylesheet" href="../../assets/css/loading.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
+<!-- the fixed layout is not compatible with sidebar-mini -->
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo"></div>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <div class="navbar-custom-menu">
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li>
+                    <a href="../../index.html">
+                        <i class="iconfont icon-shouye"></i> <span>首页</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="iconfont icon-moshiyubao"></i> <span>模式预报</span>
+                        <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="area.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 区域</a></li>
+                        <li ><a href="city.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 城市</a></li>
+                       <li><a href="citycast.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 城市预报2</a></li>
+            			<li><a href="analysis.html"><!--<i class="iconfont icon-moshiyubao"></i>--> 中长期分析</a></li>
+                    </ul>
+                </li>
+				<li class="treeview">
+					<a href="#">
+						<i class="iconfont icon-yewutianbao"></i> <span>业务填报</span>
+						<span class="pull-right-container">
+				              <i class="fa fa-angle-left pull-right"></i>
+				            </span>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="southwestRegio.html">
+								<!--<i class="iconfont icon-moshiyubao"></i>-->西南区域</a>
+						</li>
+						<li>
+							<a href="SichuanProvince.html">
+								<!--<i class="iconfont icon-moshiyubao"></i>-->四川省</a>
+						</li>
+					</ul>
+				</li>
+                 <li class="treeview active">
+		          <a href="#">
+		             <i class="iconfont icon-yubaopinggu"></i> <span>预报评估</span>
+		            <span class="pull-right-container">
+		              <i class="fa fa-angle-left pull-right"></i>
+		            </span>
+		          </a>
+		          <ul class="treeview-menu">
+		            <li><a href="Expertevaluation.html">专家评估</a></li>
+		            <!--<li><a href="Modeevaluation.html">模式评估</a></li>
+		            <li><a href="Statisticalforecastevaluation.html"> 统计预报评估</a></li>
+		            <li><a href="exportData.html">数据导出</a></li>-->
+		            <li class='active'><a href="Evaluationsummary.html">评估汇总</a></li>
+		          </ul>
+		        </li>
+                <li class="treeview">
+			          <a href="#">
+			            <i class="iconfont icon-gonggongxinxi"></i> <span>公共信息</span>
+			            <span class="pull-right-container">
+			              <i class="fa fa-angle-left pull-right"></i>
+			            </span>
+			          </a>
+			          <ul class="treeview-menu">
+			            <li><a href="urbanforecast.html"><!--<i class="iconfont icon-moshiyubao"></i>-->城市预报结果</a></li>
+			            <li><a href="regionalforecast.html"><!--<i class="iconfont icon-moshiyubao"></i>-->区域预报结果</a></li>
+			            <li><a href="colortable.html"><!--<i class="iconfont icon-moshiyubao"></i>-->刷色表</a></li>		          
+			          </ul>
+			        </li>
+                <li>
+                    <a href="polluteanalysis.html">
+                        <i class="iconfont icon-wuranlaiyuanfenxi"></i> <span>污染解析</span>
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="system.html">
+                        <i class="iconfont icon-xitongguanli"></i> <span>系统管理</span>
+                    </a>
+                </li>-->
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper operate-wrapper">
+    	    <div class="head-control">
+	            <div class='headcheck'>
+	            </div>
+	            <div class="header-sum">
+	            	<p>PM2.5(单位):  <span>μg/m³</span></p>
+	            </div>
+	            <div class="time-control">
+	                <div  class="slide-icon eightrow">
+	                    <span class="thirdbg"></span>
+	                    <ul id="time" class="slide-button">
+	                        <li class="active" data-type="1">1d</li>
+	                        <li data-type="2">2d</li>
+	                        <li data-type="3">3d</li>
+	                        <li data-type="4">4d</li>
+	                        <li data-type="5">5d</li>
+	                        <li data-type="6">6d</li>
+	                        <li data-type="7">7d</li>
+	
+	                    </ul>
+	                </div>
+	
+	            </div>
+            </div>
+            <div class='tablebox' id="fixedTable">
+            	<table id="tablelist" class='table  table-hover'></table>
+            </div>
+    </div>
+    <aside class="control-sidebar control-sidebar-dark">
+    	 <a href="#"  data-toggle="control-sidebar" class="control-sidebar-icon" id="controlSidebar">
+            <i class="icon iconfont icon-danchu"></i></br>
+            参数<br/>配置
+        </a>
+        <p class="time-title">时间间隔</p>
+        	<ul id="areatype" class="primary-btn">
+				<li  data-type="1">月度</li>
+				<li class='active' data-type="2">季度</li>
+				<li data-type="3">年度</li>
+			</ul>
+
+        <p class="time-title">评估时间</p>
+        <div class="input-daterange input-group bottomdivide" id="rangeDatePicker">
+            
+        </div>
+         <p class="time-title modeselect">模式选择</p>
+        <div class="modebox">
+            <span class="thirdbgs active" data-type="1">专家模式</span>
+        </div>
+        <div class="city-select"></div>
+
+    </aside>
+    <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+		<script src="../../assets/js/jq/jquery-2.1.0.min.js"></script>
+		<script src="../../assets/js/page/jquery.tableHeaderFixed.js"></script>	
+		
+		<!-- Bootstrap 3.3.7 -->
+		<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+		<script src="../../assets/js/bootstrap/bootstrap-datepicker.min.js"></script>
+		<script src="../../assets/js/bootstrap/locales/bootstrap-datepicker.zh-CN.min.js" charset="UTF-8"></script>
+		<script src="../../assets/js/select/select2.full.min.js"></script>
+		<script src="../../assets/js/date/date.js"></script>
+		<script src="../../assets/js/data/data.js"></script>
+		<script src="../../assets/js/request.js"></script>
+		<script src="../../plugins/slideicon/slide.js"></script>
+		<script src="../../assets/js/iCheck/icheck.js"></script>
+		<script src="../../assets/js/config.js"></script>
+		<script src="../../assets/js/tool.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../../assets/js/adminlte.js"></script>
+		<script src="../../assets/js/common.js"></script>
+		<script src="../../assets/js/page/Evaluationsummary.js"></script>
+		
+        <script src="../../assets/js/url.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+option =  {
+    color: ['rgb(0,0,0)'],
+   tooltip : {//鼠标悬浮弹窗提示  
+         		  trigger : 'item', 
+                          show:true,  
+                          showDelay: 0,  
+                          hideDelay: 0,  
+                         transitionDuration:0,   
+                         backgroundColor : '#fff',
+                         borderColor : 'yellow',  
+                         borderRadius : 8,  
+                         borderWidth: 2,  
+                         padding: 10,    // [5, 10, 15, 20]  
+                        formatter: function (params,ticket,callback) {  
+                          
+                         if(params.componentType=='series'){            
+                                 var res =  params.name+   '<br/>'+"最近及未来变化曲线"+' : ' + params.data;
+                                 return res; 
+                            }
+                       } ,
+                       textStyle : {
+                        color: '#000',
+                        decoration: 'none',
+                        fontFamily: 'Verdana, sans-serif',
+                        fontSize: 10,
+                        fontStyle: 'italic',
+                        fontWeight: 'bold'
+                    },
+                },
+   
+    xAxis : [
+        {
+            type : 'category',
+            splitLine:{show: false},
+            data : ["05-03", "05-04", "05-05", "05-06", "05-07", "05-08", "05-09", "05-10", "05-11", "05-12", "05-13", "05-14", "05-15", "05-16", "05-17", "05-18", "05-19", "05-20", "05-21", "05-22", "05-23", "05-24", "05-25", "05-26", "05-27", "05-28", "05-29", "05-30"],
+           
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+             splitLine:{show: false}
+        }
+    ],
+    series : [
+        {
+            name:'',
+            type:'bar',
+            barWidth: '60%',
+            data:["81", "74", "87", "85", "80", "77", "99", "90", "96", "95", "79", "75", "94", "100", "36", "38", "39", "35", "38", "38", "35", "36", "37", "39", "38", "38", "39", "38"],
+            itemStyle: {   
+            //通常情况下：
+            normal:{  
+　　　　　　　　　　　　//每个柱子的颜色即为colorList数组里的每一项，如果柱子数目多于colorList的长度，则柱子颜色循环使用该数组
+                color: function (params){
+                    var colorList = ["#ffff00", "#ffff00", "#ffff00", "#ffff00", "#ffff00", "#ffff00", "#00e400", "#00e400", "#ffff00", "#ff7e00", "#ff7e00", "#ff7e00", "#ff7e00", "#ff7e00", "#ffff00", "#ffff00", "#ffff00", "#ffff00", "#ffff00", "#ffff00", "#00e400", "#ffff00", "#ffff00", "#ffff00", "#ffff00", "#ffff00"]
+                    return colorList[params.dataIndex];
+                }
+            },
+            //鼠标悬停时：
+            emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+        },
+            markArea: {
+                data: [[{
+                    name: '历史',
+                    // xAxis: 'Mon'
+                }, {
+                    xAxis: '05-18',
+                     itemStyle:{
+                      color:'rgb(235,248,248)'
+                    },
+                    label:{
+                       color:'red'
+                    }
+                }], [{
+                    name: '预测',
+                    xAxis: '05-18'
+                }, {
+                    // xAxis: 'Sun',
+                     itemStyle:{
+                        color:'rgba(0,0,0,0.15)'
+                    }，
+                   label:{
+
+	                color:'blue'
+	                  
+		    }
+                }] ]
+            }
+        }
+    ]
+};

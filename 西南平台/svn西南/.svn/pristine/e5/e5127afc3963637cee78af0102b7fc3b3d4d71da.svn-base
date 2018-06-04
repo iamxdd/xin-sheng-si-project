@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>城市</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/iconfont.css">
+    <link rel="icon" href="../../img/bg/logo.png">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../../assets/css/AdminLTE.css">
+    <link rel="stylesheet" href="../../assets/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="../../assets/css/area.css">
+    <link rel="stylesheet" href="../../assets/css/select/select2.min.css">
+    <link rel="stylesheet" href="../../assets/js/iCheck/all.css">
+    <link rel="stylesheet" href="../../plugins/slideicon/slide.css">
+    <link rel="stylesheet" href="../../assets/css/myStyle.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../plugins/echart/echarts.min.js"></script>
+    <script src="../../plugins/echart/infographic.js"></script>
+
+</head>
+<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
+<!-- the fixed layout is not compatible with sidebar-mini -->
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper" id="withOutLeft">
+
+        <header class="main-header">
+            <!-- Logo -->
+            <div class="logo"></div>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <div class="navbar-custom-menu">
+
+                </div>
+            </nav>
+        </header>
+
+        <!-- =============================================== -->
+
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                   
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <div class="content-wrapper operate-wrapper">
+            <div class="head-control">
+                <div>
+                    <span class="city-title">预报模式:</span>
+                    <label>
+                        <input type="radio" class="minimal" name="forecastMode" checked value="CMAQ">
+                        <span class="modelA">CMAQ</span>
+                    </label>
+                    <label>
+                        <input type="radio" class="minimal" name="forecastMode" value="OPAQ">
+                        <span class="modelB">OPAQ</span>
+                    </label>
+                    <label>
+                        <input type="radio" class="minimal" name="forecastMode" value="model">
+                        <span class="modelC">多模型</span>
+                    </label>
+                </div>
+                <div class="time-control">
+                    <div class="slide-icon eightrow">
+                        <span class="thirdbg"></span>
+                        <ul id="time" class="slide-button">
+                            <li class="active" type="1">1d</li>
+                            <li type="2">2d</li>
+                            <li type="3">3d</li>
+                            <li type="4">4d</li>
+                            <li type="5">5d</li>
+                            <li type="6">6d</li>
+                            <li type="7">7d</li>
+                            <li type="8">8d</li>
+                            <li type="9">9d</li>
+                            <li type="10">10d</li>
+                            <li type="11">11d</li>
+                            <li type="12">12d</li>
+                            <li type="13">13d</li>
+                            <li type="14">14d</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="gas">
+
+            </div>
+            <div class="water">
+
+            </div>
+        </div>
+
+        <aside class="control-sidebar control-sidebar-dark">
+            <a href="#" data-toggle="control-sidebar" class="control-sidebar-icon" id="controlSidebar">
+                <i class="icon iconfont icon-danchu"></i>
+                </br>
+                参数
+                <br/>配置
+            </a>
+            <p class="time-title">起报时间</p>
+            <div class="input-daterange input-group bottomdivide" id="rangeDatePicker">
+                <input type="text" class="input-sm form-control" name="start" />
+                <span style="display: table-cell; padding: 6px 12px; vertical-align: middle;">至</span>
+                <input type="text" class="input-sm form-control" name="end" />
+            </div>
+
+            <p class="time-title">预报类型</p>
+            <div class="forecastType">
+                <div class="radioBtn active" check="true" value="daily">日均</div>
+                <div class="radioBtn" value="hours">小时</div>
+            </div>
+
+            <p class="time-title">站点选择</p>
+            <div class="city-select">
+                <select class="seleceBtn" name="province"></select>
+                <select class="seleceBtn" name="city"></select>
+                <select class="seleceBtn" name="station"></select>
+            </div>
+
+            <p class="time-title">污染物指标</p>
+            <div class="pollutant">
+                <div value="AQI" class="checkBtn active" check="true">AQI</div>
+                <div value="PM25" class="checkBtn">PM2.5</div>
+                <div value="PM10" class="checkBtn">PM10</div>
+                <div value="O3" class="checkBtn">O3</div>
+                <div value="NO2" class="checkBtn">NO2</div>
+                <div value="SO2" class="checkBtn">SO2</div>
+                <div value="CO" class="checkBtn">CO</div>
+            </div>
+
+            <p class="time-title">气象指标</p>
+            <div class="weather">
+                <div value="humidity" class="checkBtn active" check="true">相对湿度</div>
+                <div value="rainfall" class="checkBtn">降雨量</div>
+                <div value="temperature" class="checkBtn">温度</div>
+                <div value="WindPower" class="checkBtn">风力风向</div>
+                <div value="pressure" class="checkBtn">压强</div>
+                <div value="cloudage" class="checkBtn">云量</div>
+                <div value="boundary" class="checkBtn">边界层高度</div>
+            </div>
+
+        </aside>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery 3 -->
+    <script src="../../assets/js/jq/jquery-2.1.0.min.js"></script>
+    <script type="text/ecmascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap-datepicker.min.js"></script>
+    <script src="../../assets/js/bootstrap/locales/bootstrap-datepicker.zh-CN.min.js" charset="UTF-8"></script>
+    <script src="../../assets/js/select/select2.full.min.js"></script>
+    <script src="../../assets/js/date/date.js"></script>
+    <script src="../../assets/js/data/area.js"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../plugins/slideicon/slide.js"></script>
+    <script src="../../assets/js/iCheck/icheck.js"></script>
+    <script src="../../assets/js/echarts.min.js"></script>
+    <script src="../../assets/js/moment.min.js"></script>
+    <script src="../../assets/js/public.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../assets/js/request.js"></script>
+    <script src="../../assets/js/adminlte.js"></script>
+    <script src="../../assets/js/data/data.js"></script>
+    <script src="../../assets/js/tool.js"></script>
+    <script src="../../assets/js/common.js"></script>
+    <script src="../../assets/js/url.js"></script>
+    <script src="../../assets/js/page/city.js"></script>
+    <script src="../../assets/js/myStyle.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

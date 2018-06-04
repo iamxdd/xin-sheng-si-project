@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="section">
+    <input id="username" type="text" placeholder="请输入用户名" maxlength="10" bindinput='bindUserName'></input>
+  </view>
+  <view class="section">
+    <input id="password" type="password" placeholder="请输入密码" bindinput="bindPassWord" focus='false'></input>
+  </view>
+  <button type='button' class='btn' bindtap='loginBtn'>登录</button>
+
+  <view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="40" color="{{item}}"/>
+  </block>
+</view>
+<view>
+<text>sdssaffsdfsdfs</text>
+<rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+</view>
+</view> 
+

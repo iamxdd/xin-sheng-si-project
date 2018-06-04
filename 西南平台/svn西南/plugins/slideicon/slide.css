@@ -1,0 +1,71 @@
+.slide-icon{
+    height: 26px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.slide-icon li{
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+}
+.slide-icon span{
+    margin: 4px;
+    display: inline-block;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    transition: left .4s;
+    -webkit-transition: left .4s;
+    -moz-transition: left .4s;
+}
+.slide-icon li:hover{
+    cursor: pointer;
+}
+.tworow{
+    width: 160px;
+    background-color: rgba(224, 229, 232, 1);
+}
+.tworow span{
+    width: 72px;
+    background-color: rgba(0, 54, 80, 1);
+}
+.tworow li{
+    width: 80px;
+    color:rgba(0, 54, 80, 1);
+}
+.fourrow{
+    width: 276px;
+    background-color: rgba(224, 229, 232, 1);
+}
+.fourrow span{
+    width: 60px;
+    background-color: rgba(0, 54, 80, 1);
+}
+.fourrow li{
+    width: 68px;
+    color:rgba(0, 54, 80, 1);
+}
+.tworow .active,.fourrow .active{
+    color: white;
+}
+.eightrow li{
+    width: 50px;
+    color: white;
+}
+.eightrow .active{
+    color: #10aefc;
+}
+.eightrow{
+    width: 700px;
+    background: #10aefc;
+}
+.eightrow span{
+    width: 42px;
+    background: white;
+}

@@ -1,0 +1,391 @@
+#content{
+    min-width: 1410px;
+    padding: 10px 14px;
+    font-family: '微软雅黑';
+    font-size: 1rem;
+}
+.header-content{
+    padding: 10px 10px 30px 10px;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.scoreDetailstd{
+	width: 300px;
+}
+.scoreDetailstd td{
+	text-align: left;
+	text-indent: 5px;
+}
+.tdfirst{
+	width: 150px;
+}
+.header{
+    padding: 5px 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(64,181,197)), to(rgb(7,165,187)));
+    border-radius: 8px;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid rgb(47, 136, 147);
+}
+.lavalamp-object {
+	background-color:rgba(51,51,51,0.4);
+    border-radius: 8px;
+}
+.header li{
+    padding: 3px 10px;
+    margin-right: 10px;
+    list-style: none;
+    float: left;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.quality-control-menu ul li a {
+    font-size: 16px;
+}
+.header li a {
+    font-size: 16px;
+}
+.large-title{
+
+}
+.header li a{
+    color: white;
+}
+.header li a:hover{
+    text-decoration:none;
+}
+.quality-control-menu h3 span{
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+.quality-control-menu h3{
+    margin: 0;
+    padding: 0 0 0 10px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.quality-control-menu ul li{
+    padding: 0 10px;
+    margin-right: 5px;
+    float: left;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+}
+.checkActive{
+    background: rgb(196, 210, 211);
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+.quality-control-menu ul li:hover{
+    background:rgb(196, 210, 211);
+    cursor: pointer;
+}
+
+.table-content{
+    padding: 5px;
+    margin-top: 20px;
+    min-height: 600px;
+    border-radius: 10px;
+}
+.content-title{
+    background: -webkit-gradient(linear,left top,left bottom, from(#bce3f2),to(#65b8e0));
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border: 1px solid rgb(99, 129, 103);
+    color: white;
+}
+.content-title span{
+   padding: 0 0 0 14px;
+   display: inline-block;
+   float: right;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-left:1px solid rgba(0, 0, 0, 0.0901961);
+}
+.content-title h3{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+.main-content{
+    /*padding: 0 5px;*/
+}
+.content-body{
+    padding: 15px;
+    background: -webkit-gradient(linear,left top,left bottom, from(#4580a1),to(#65b5dc));
+    min-height: 1303px;
+}
+
+.conditions>span{
+    display: inline-block;
+    margin:10px 0 20px 35px;
+    color: white;
+	font-size: 16px;
+}
+.conditions .combo-select input::-webkit-input-placeholder{
+    color: #333!important;
+}
+.conditions span select{
+    color: #333;
+    height: 28px;
+    border-radius: 4px;
+}
+.contentfortables{
+    margin-top: 20px;
+}
+.textrightalign{
+    text-align: center;
+}
+.tab-content{
+    min-width: 800px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    min-height: 400px;
+    border-bottom-left-radius:14px;
+    border-bottom-right-radius: 14px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+.contentfortables .nav-tabs>li.active>a, .contentfortables .nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:visited, .nav-tabs>li.active>a:hover{
+    border: 1px solid white;
+}
+.contentfortables #myTabs li{
+    margin-right:2px;
+    position: relative;
+    left: -4px;
+    background:rgba(2, 2, 2,0.4);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 50px;
+    width: 10%;
+    height: 57px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+.presentation_ {
+    width: 12% !important;
+}
+.resettd{
+	width:18%;
+}
+.flagok{
+	width:20px!important
+}
+
+textarea{
+	resize: none;
+}
+.Othersquestion,.othertext{
+	width: 400px;
+    height: 100px;
+}
+.contentfortables .nav-tabs a{
+    background: rgb(7,165,187);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 50px;
+    color: white;
+    position: relative;
+    left: 4px;
+    height: 57px;
+}
+.contentfortables .nav a:hover{
+    color: #333
+}
+/*tabs start*/
+#tabs{
+	padding:10px;
+}
+#tabs li{
+	position: relative;
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: cetner;
+    line-height: 10px;
+}
+#tabs li>a{
+	color:#333;
+}
+#tabs li.active>a{
+	color:#fff;
+}  
+/*tabs end*/   
+.table-title{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+table,tbody,table th,table tr,table td{
+    border: 1px solid #5d9cc9!important;
+}
+table th{
+    background:-webkit-linear-gradient(top,#ddedf9 0,#c9e2f5 100%);
+}
+.modal-body>div:nth-child(1){
+    margin: 10px 0;
+    text-align: left;
+}
+.modal-body>div>span{
+    display: inline-block;
+    /*width: 80px;*/
+}
+.checkdate span{
+	line-height: 50px;
+	text-align: right;
+	padding: 0 15px;
+}
+
+.modal-body input,.modal-body select{
+    width: 200px;
+    height: 30px;
+}
+#startyear{
+    color: #333;
+}
+.modal-body .combo-select{
+    margin: 0;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    border:1px solid #888888;
+    border-radius: 0;
+}
+.conditions .combo-select{
+    margin: 0;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    border:1px solid #888888;
+    border-radius: 0;
+    color: #333;
+}
+.modal-body .combo-select input{
+    width: 100%;
+    height: 100%;
+}
+.conditions .combo-select input{
+    width: 100%;
+    height: 100%;
+}
+#myModal .modal-dialog,#myModaladd .modal-dialog{
+    width: 800px;
+}
+.jifenmode{
+	width:1000px;
+}
+.pinfendes{
+	width:200px;
+}
+.lefttext{
+	text-align: left;
+}
+.lefttext span{
+	display: block;
+	text-indent: 20px;
+	width:auto!important;
+	height:auto!important;
+	background:none!important;
+	border:none!important;
+	line-height: none!important;
+}
+#scoreDetails input{
+    margin: 10px;
+    width: 60px;
+    height: 30px;
+}
+.coretablefooter{
+    padding-top: 20px;
+    text-align: left;
+}
+#scoreDetails span{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #888888;
+    vertical-align: middle;
+    line-height: 30px;
+    background: -webkit-linear-gradient(top,#ddedf9 0,#c9e2f5 100%);
+}
+#scoreDetails .resettd{
+	width:13%
+}
+#scoreDetails .resettd span{
+	border:0!important;
+	display: inline!important;
+	background:none!important;
+}
+/*=========================================================================================*/
+.input-radio{
+	margin: 0 0 0 20px !important;
+}
+#richanggongzuopingjiabiao tr td{
+	padding: 0;
+}
+#richanggongzuopingjiabiao p{
+	margin: 0;
+}
+#richanggongzuopingjiabiao div{
+	border-bottom: 1px solid;
+}
+#perBtn{
+    text-align: right;
+    border: 1px solid #638167;
+    position: absolute;
+    right: 8%;
+    padding: 6px;
+    margin-top: -5px;
+    cursor: pointer;
+    background-color: #07A5BB;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.weekItem{
+	margin: 0 0 10px;
+    max-width: 240px;
+    max-height: 40px;
+    height: 38px;
+    text-align: center;
+}
+#daliytable tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+#runCost{
+	text-align: center;
+}
+#runCost input[type="text"]{
+	border:none;
+	text-align: center;
+}
+.contentShow select{
+	width:60px;
+	height:25px;
+}
+#saveBtn{
+    border: 1px solid #638167;
+    position: absolute;
+    right: 3%;
+    padding: 6px 15px;
+    cursor: pointer;
+    background-color: #07A5BB;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.showDate{
+	display: inline-block
+}
+.showDate span{
+	padding-left: 5px;;
+}
+#scorecontent,#chuanshuContent,#daliytable,#losepointDetail,#testcalscorces,#runqualis,#runCostModal,#jianceyiqitable,#yunxingzhiliangtixitable{
+    font-size: 14px;
+}

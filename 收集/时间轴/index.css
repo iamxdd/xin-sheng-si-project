@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding: 0
+}
+.box { width: 1688px; height: 52px; margin: 200px auto; }
+#progressTime_control { float: left; width: 36px; height: 52px; 
+	background-image: url(img/play.png); 
+	background-color: #008DD2 ;     border-right: 1px solid #ddd; outline: none; position: relative; cursor: pointer; box-sizing: border-box; background-size: 10px; background-repeat: no-repeat; background-position: center; }
+#progressTime_control:before { content: ''; width: 36px; height: 6px;
+ background-color:#008DD2; 
+ position: absolute; left: 0; top: -6px; }
+/*#progressTime_control:after { content: ''; width: 0; height: 0; border: 8px solid transparent; border-left: 12px solid #fff; position: absolute; left: 50%; margin-left: -6px; top: 50%; margin-top: -8px; }*/
+#progressTime_control:hover:after { border-left-color: #ccc; }
+.progressTime { 
+	color: white; background: #008DD2 ; width: 1640px; height: 52px; padding-top: 0px; padding-bottom: 0px; display: none; position: relative; float: left; }
+#progressTime_concent { width: 100%; height: 36px; margin: 0 auto; cursor: pointer; }
+#scrollBarBox { width: 100%; height: 6px; padding: 5px 0; position: absolute; top: -11px; background-color: transparent; z-index: 2; }
+#scrollBar { width: 100%; height: 6px; background-color: #d3d3d3;
+/*display: flex */
+	cursor: pointer; position: absolute; top: 5px; }
+.timecode { width: 56px; height: 24px; background-color: #04B300;
+	border-radius: 5px;
+	opacity:.7;
+	font-size: 12px;
+	position: absolute; left: 0; top: -35px; color: #fff; text-align: center; cursor: pointer; display: none; }
+.timecode:after { content: ''; width: 0; height: 0; border: 5px solid transparent; border-top: 5px solid #04B300; position: absolute; left: 50%; bottom: -10px; margin-left: -5px; }
+#scroll_Track { width: 0px; height: 6px; 
+	background-color: rgb(4,217,136); transition: all ease-in-out .25s; }
+#scroll_Thumb { height: 24px; 
+	width: 50px; 
+	text-align: center; 
+	line-height: 24px; 
+	position: absolute; 
+	left: -25px; 
+	margin-top: -35px; 
+	cursor: pointer; 
+	color: #000; 
+	font-size: 12px; 
+	transition: all ease-in-out .25s;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    border-radius: 4px;
+	 }
+#scroll_Thumb:after { content: ''; width: 0; height: 0; border: 5px solid transparent; border-top: 5px solid  rgba(0,0,0,.3); position: absolute; left: 20px; bottom: -10px; }
+/*#scroll_Thumb:hover { background-color: #ff4400; border: 1px solid #fff; }*/
+.time_slot p { 
+	/*float: left; */
+	line-height: 36px;
+	text-align: center;
+ /*width: calc(20% - 1px); */
+ /*border-left: 1px solid #ccc; */
+ margin: 0; text-align: center; cursor: pointer; font-size: 12px;
+ /*background: yellow*/
+  }
+dl{
+	border-bottom: .5px solid #ddd;
+    height: 14px;
+    display: flex;
+    /*background: red*/
+    /*width: 50.4px;
+    display: inline-block;
+    list-style: none;*/
+}
+.time_slot{
+	clear:both;
+	display: flex;
+}
+dd {
+    color: #fff;
+    opacity: .7;
+    font-size: 12px;
+    flex:1;
+    /*line-height: 0;*/
+    -webkit-transform-origin-x: 0;
+    /*float: left;*/
+    text-align: center;
+        height: 14px;
+    line-height: 14px
+}
+.pp{
+	/*background: pink;*/
+	/*width: 16.66%;*/
+	/*width: 10%;*/
+    height: 52px;
+    border-right: 1px solid #ddd;
+    float: left;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    flex:1;
+}
+.timeline_i0{
+	/*list-style: none;*/
+	    width: 1px;
+    /*background: hsla(0,0%,100%,.38);*/
+    background: hsla(0,0%,100%,.38);
+    height: 6px;
+        display: inline-block;
+        position: relative;
+        top:-12px
+}
+.line-box{
+	display: flex;
+	position: relative;
+	top:0;
+	width:100%;
+}
+.line{
+	flex:1;
+	/*float: left;*/
+	 height: 6px;
+	 /*background: red*/
+}

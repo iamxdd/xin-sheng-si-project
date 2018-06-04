@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>区域</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.7 -->
+		<!-- Bootstrap 3.3.7 -->
+		<link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="../../assets/css/iconfont.css">
+		<link rel="icon" href="../../img/bg/logo.png">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" href="../../assets/css/AdminLTE.css">
+		<link rel="stylesheet" href="../../assets/css/skins/_all-skins.css">
+		<link rel="stylesheet" href="../../assets/css/area.css">
+		<link rel="stylesheet" href="../../assets/css/select/select2.min.css">
+		<link rel="stylesheet" href="../../plugins/slideicon/slide.css">
+		<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	</head>
+	<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
+	<!-- the fixed layout is not compatible with sidebar-mini -->
+
+	<body class="hold-transition skin-blue fixed sidebar-mini">
+		<!-- Site wrapper -->
+		<div class="wrapper">
+
+			<header class="main-header">
+				<!-- Logo -->
+				<div class="logo"></div>
+				<!-- Header Navbar: style can be found in header.less -->
+				<nav class="navbar navbar-static-top">
+					<div class="navbar-custom-menu">
+
+					</div>
+				</nav>
+			</header>
+
+			<!-- =============================================== -->
+
+			<!-- Left side column. contains the sidebar -->
+
+			<aside class="main-sidebar">
+				<section class="sidebar">
+					<ul class="sidebar-menu" data-widget="tree">
+						
+					</ul>
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+			<div class="content-wrapper  operate-wrapper">
+				<div class="map-container">
+					<div class="multiple-model">
+						<div>
+							<p>模式CMAQ</p>
+							<div id="modelA" class="img-container"> </div>
+						</div>
+						<div>
+							<p>模式OPAQ</p>
+							<div id="modelB" class="img-container"><img src="../../img/bg/nohave.jpg"></div>
+						</div>
+						<p></p>
+						<!--<div>
+							<p>模式C</p>
+							<div id="modelC" class="img-container"><img src="../../img/bg/nohave.jpg"></div>
+						</div>
+						<div>
+							<p>模式D</p>
+							<div id="modelD" class="img-container"><img src="../../img/bg/nohave.jpg"></div>
+						</div>-->
+					</div>
+					<div class="single-model">
+						<div>
+							<div class="area-title">
+								<div class="dropdown">
+									<button type="button" class="btn dropdown-toggle" id="singleModle1" data-toggle="dropdown" parameter="AQI">
+                               <span class="title">AQI</span>
+                               <span class="caret"></span>
+                           </button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="singleModle1"></ul>
+								</div>
+								<p class="multiple-title">四川省</p>
+							</div>
+							<div class="img-container singleModle1"></div>
+						</div>
+						<div>
+							<div class="area-title">
+								<div class="dropdown">
+									<button type="button" class="btn dropdown-toggle" id="singleModle2" data-toggle="dropdown" parameter="PM2.5">
+                               <span class="title">PM<small class="subscript">2.5</small></span>
+                               <span class="caret"></span>
+                           </button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="singleModle2"> </ul>
+								</div>
+								<p class="multiple-title">四川省</p>
+							</div>
+							<div class="img-container singleModle2"></div>
+						</div>
+						<p></p>
+						<div>
+							<div class="area-title">
+								<div class="dropdown">
+									<button type="button" class="btn dropdown-toggle" id="singleModle3" data-toggle="dropdown" parameter="avgRH">
+                               <span class="title">相对湿度</span>
+                               <span class="caret"></span>
+                           </button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="singleModle3"> </ul>
+								</div>
+								<p class="multiple-title">四川省</p>
+							</div>
+							<div class="img-container singleModle3"></div>
+						</div>
+						<div>
+							<div class="area-title">
+								<div class="dropdown">
+									<button type="button" class="btn dropdown-toggle" id="singleModle4" data-toggle="dropdown" parameter="accPRECIP">
+                               <span class="title">降水量</span>
+                               <span class="caret"></span>
+                           </button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="singleModle4"></ul>
+								</div>
+								<p class="multiple-title">四川省</p>
+							</div>
+							<div class="img-container singleModle4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<aside class="control-sidebar control-sidebar-dark">
+				<a href="#" data-toggle="control-sidebar" class="control-sidebar-icon" id="controlSidebar">
+					<i class="icon iconfont icon-danchu"></i></br>
+					参数<br/>配置
+				</a>
+				<!-- tab标签 -->
+				<p class="time-title">模式选择</p>
+				<div class="slide-icon tworow">
+					<span class="thirdbg"></span>
+					<ul id="myTab" class="slide-button">
+						
+						<li class="active" type="single-model">单模型</li>
+						<li type="multiple-model">多模型</li>
+					</ul>
+				</div>
+				 <p class="time-title">预报时间</p>
+				<input type="text" class="form-control bottomdivide date-select" id="datepicker">
+				<p class="time-title" style="    margin-top: -10px; margin-bottom: 10px;">模式选择</p>
+				<div class="slide-icon bottomdivide fourrow single-model">
+					 <span class="thirdbg"></span>
+					<ul id="model" class="slide-button">
+						<li class="active" type="A">CMAQ</li>
+						<li type="B">OPAQ</li>
+						<!--<li type="C">C</li>
+						<li type="D">D</li>-->
+					</ul>
+				</div>
+				<div class="gas-condition-select left bottomdivide">
+					 <p class="time-title" style="    margin-top: 4px; margin-bottom: 10px;">地区选择</p>
+					<div class="area-select bottomdivide">
+						<div>
+							<ul id="areatype" class="primary-btn">
+								<li type="全国">全国</li>
+								<li type="西南五省">西南五省</li>
+							</ul>
+						</div>
+						<div>
+							<div class="dropdown">
+								<span class="caret"></span>
+								<button type="button" class="btn dropdown-toggle active" id="areaselect" data-toggle="dropdown">
+                            <span class="title">四川省</span>
+                        </button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="areaselect">
+									<li type="area">四川省</li>
+									<li type="area">重庆市</li>
+									<li type="area">西藏自治区</li>
+									<li type="area">云南省</li>
+									<li type="area">贵州省</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				 <p class="time-title" style="margin-bottom: 10px;">数据形式</p>
+				 <div class="slide-icon bottomdivide tworow">
+					<span class="thirdbg"></span>
+					<ul id="picturetype" class="slide-button">
+						<li class="active" type="static">静态</li>
+						<li type="dynamic">动态</li>
+					</ul>
+				</div>
+				 <p class="time-title" style="margin-bottom: 10px;">时间形式</p>
+				<div class="slide-icon bottomdivide tworow">
+					<span class="thirdbg"></span>
+					<ul id="daytype" class="slide-button">
+						<li class="active" type="DAY">日均</li>
+						<li type="HOUR">小时</li>
+					</ul>
+				</div>
+
+				<!-- solid sales graph -->
+				<div class="box box-solid bg-teal-gradient">
+					<div class="box-header">
+						<p class="box-title">时间详细</p>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn bg-teal btn-sm" data-widget="collapse">
+                        <i class="icon iconfont icon-zhankai"></i>
+                    </button>
+						</div>
+					</div>
+
+					<div class="box-body border-radius-none">
+						<div class="day-hour single">
+							<div>
+								<ul id="time" class="primary-btn"> </ul>
+							</div>
+							<div>
+								<ul id="hour" class="primary-btn">
+									<li type="0" class="forbid">1时</li>
+									<li type="1" class="forbid">2时</li>
+									<li type="2" class="forbid">3时</li>
+									<li type="3" class="forbid">4时</li>
+									<li type="4" class="forbid">5时</li>
+									<li type="5" class="forbid">6时</li>
+									<li type="6" class="forbid">7时</li>
+									<li type="7" class="forbid">8时</li>
+									<li type="8" class="forbid">9时</li>
+									<li type="9" class="forbid">10时</li>
+									<li type="10" class="forbid">11时</li>
+									<li type="11" class="forbid">12时</li>
+									<li type="12" class="forbid">13时</li>
+									<li type="13" class="forbid">14时</li>
+									<li type="14" class="forbid">15时</li>
+									<li type="15" class="forbid">16时</li>
+									<li type="16" class="forbid">17时</li>
+									<li type="17" class="forbid">18时</li>
+									<li type="18" class="forbid">19时</li>
+									<li type="19" class="forbid">20时</li>
+									<li type="20" class="forbid">21时</li>
+									<li type="21" class="forbid">22时</li>
+									<li type="22" class="forbid">23时</li>
+									<li type="23" class="forbid">24时</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /.box-body -->
+				</div>
+				<!-- /.box -->
+
+				<!-- solid sales graph -->
+				<div class="box box-solid bg-teal-gradient multiple-model">
+					<div class="box-header">
+						<p class="box-title">项目</p>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn bg-teal btn-sm" data-widget="collapse">
+                        <i class="icon iconfont icon-zhankai"></i>
+                    </button>
+						</div>
+					</div>
+					<div class="box-body border-radius-none">
+						<div class="left condition3">
+							<ul id="gas" class="primary-btn">
+								<li type="AQI" id="initGas" class="active">AQI</li>
+								<li type="PM2.5">PM<small class="subscript">2.5</small></li>
+								<li type="PM10">PM<small class="subscript">10</small></li>
+								<li type="O3">O<small class="subscript">3</small></li>
+								<li type="SO2">SO<small class="subscript">2</small></li>
+								<li type="NO2">NO<small class="subscript">2</small></li>
+								<li type="CO">CO</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /.box-body -->
+				</div>
+				<!-- /.box -->
+
+				<!-- solid sales graph -->
+				<div class="box box-solid bg-teal-gradient multiple-model">
+					<div class="box-header">
+						<p class="box-title">气象</p>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn bg-teal btn-sm" data-widget="collapse">
+                        <i class="icon iconfont icon-zhankai"></i>
+                    </button>
+						</div>
+					</div>
+					<div class="box-body border-radius-none">
+						<div class="left condition2">
+							<ul id="water" class="primary-btn">
+								<li class="with-right" type="accPRECIP_PRECIP">降水量</li>
+								<li type="avgCFRAC_CFRAC">云量</li>
+								<li class="with-right" type="avgRH_RH">相对湿度</li>
+								<li type="maxPBL_PBL">混合层高</li>
+								<li class="with-right" type="winds_WIND">风场</li>
+								<li type="TEMP2" class="day-temp">气温</li>
+								<li type="minTEMP" class="hour-temp">最低气温</li>
+								<li type="maxTEMP" class="hour-temp">最高气温</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /.box-body -->
+				</div>
+				<!-- /.box -->
+
+			</aside>
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- jQuery 3 -->
+		<script src="../../assets/js/jq/jquery-2.1.0.min.js"></script>
+		<!-- Bootstrap 3.3.7 -->
+		<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+		<script src="../../assets/js/bootstrap/bootstrap-datepicker.min.js"></script>
+		<script src="../../assets/js/bootstrap/locales/bootstrap-datepicker.zh-CN.min.js" charset="UTF-8"></script>
+		<script src="../../assets/js/select/select2.full.min.js"></script>
+		<script src="../../assets/js/date/date.js"></script>
+		<script src="../../assets/js/data/data.js"></script>
+		<script src="../../assets/js/request.js"></script>
+		<script src="../../plugins/slideicon/slide.js"></script>
+		<script src="../../assets/js/config.js"></script>
+		<script src="../../assets/js/tool.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../../assets/js/adminlte.js"></script>
+		<script src="../../assets/js/common.js"></script>
+		<script src="../../assets/js/page/area.js"></script>
+		<script src="../../assets/js/url.js"></script>
+	</body>
+
+</html>

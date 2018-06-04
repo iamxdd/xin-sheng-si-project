@@ -1,0 +1,27 @@
+.checkBtn,.radioBtn{
+  display: inline-block;
+  width: 65px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0 0 10px 6px;
+  background-color: #003650;
+  color: #fff;
+  border-radius: 5px !important;
+}
+.checkBtn.active,.radioBtn.active{
+  color: #000;
+  background-color: #fff;
+}
+.seleceBtn{
+  width: 88px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  text-align-last: center;
+  margin: 0 0 10px 6px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #003650;
+}

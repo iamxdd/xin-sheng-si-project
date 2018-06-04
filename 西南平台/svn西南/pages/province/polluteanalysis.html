@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>污染解析</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/iconfont.css">
+    <link rel="icon" href="../../img/bg/logo.png">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../../assets/css/AdminLTE.css">
+    <link rel="stylesheet" href="../../assets/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="../../assets/css/area.css">
+    <link rel="stylesheet" href="../../assets/css/select/select2.min.css">
+    <link rel="stylesheet" href="../../assets/js/iCheck/all.css">
+    <link rel="stylesheet" href="../../plugins/slideicon/slide.css">
+    <link rel="stylesheet" href="../../assets/css/polluteanalysis.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../plugins/echart/echarts.min.js"></script>
+    <script src="../../plugins/echart/infographic.js"></script>
+
+</head>
+<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
+<!-- the fixed layout is not compatible with sidebar-mini -->
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper" id="withOutLeft">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo"></div>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <div class="navbar-custom-menu">
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- =============================================== -->
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+               
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper operate-wrapper">
+        <div class="head-control">
+            <div>
+               <span class="city-title">污染组分:</span>
+               <label>
+                   <input type="checkbox"  class="minimal" name="forecastMode1" checked value="0">
+                   <span class="">气态组分</span>
+               </label>
+               <label>
+                   <input type="checkbox"  class="minimal" name="forecastMode2" checked value="1">
+                   <span class="">PM2.5组分</span>
+               </label>
+              
+            </div>
+           
+        </div>
+        <div class="warpone gas gaseousBox">
+            
+        </div>
+        <div class="warpone  pm pmBox">
+           
+        </div>
+         <div class="warpone pmBox">
+           <div class="warp-pm">
+            	<p>PM2.5组分浓度：</p>
+            	<div class="time-control-new">
+                <div  class="slide-icon eightrow">
+                    <span class="thirdbg"></span>
+                    <ul id="time" class="slide-button">
+                        <li class="active" type="1">1d</li>
+                        <li type="2">2d</li>
+                        <li type="3">3d</li>
+                        <li type="4">4d</li>
+                        <li type="5">5d</li>
+                        <li type="6">6d</li>
+                        <li type="7">7d</li>
+                        <li type="8">8d</li>
+                        <li type="9">9d</li>
+                        <li type="10">10d</li>
+                        <li type="11">11d</li>
+                        <li type="12">12d</li>
+                        <li type="13">13d</li>
+                        <li type="14">14d</li>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+            <div class="pmContent">
+            	<div class="echar-left">
+            		
+            	</div>
+            	<div class="echar-right">
+            		
+            	</div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="control-sidebar control-sidebar-dark">
+        <a href="#"  data-toggle="control-sidebar" class="control-sidebar-icon" id="controlSidebar">
+            <i class="icon iconfont icon-danchu"></i></br>
+            参数<br/>配置
+        </a>
+        <p class="time-title">预测时间</p>
+        <div class="input-daterange input-group bottomdivide" id="rangeDatePicker">
+            <input type="text" class="input-sm form-control" name="time" />
+        </div>
+        <p class="time-title">站点选择</p>
+        <div class="city-select">
+            <select class="seleceBtn" name="province"></select>
+            <select class="seleceBtn" name="city"></select>
+            <select class="seleceBtn" name="station"></select>
+        </div>
+
+        <p class="time-title">气态组分</p>
+        <div class="gaseous">
+            <div value="HNO3" class="checkBtn active" check="true">HNO3</div>
+            <div value="NH3" class="checkBtn">NH3</div>
+            <div value="NOX" class="checkBtn">NOX</div>
+        </div>
+
+        <p class="time-title">PM2.5组分</p>
+        <div class="pm25">
+            <div value="EC" class="checkBtn active" check="true">EC</div>
+            <div value="OC" class="checkBtn">OC</div>
+            <div value="OM" class="checkBtn">OM</div>
+            <div value="SO4" class="checkBtn">SO4</div>
+            <div value="NO3" class="checkBtn">NO3</div>
+            <div value="NH4" class="checkBtn">NH4</div>
+            <div value="Soil" class="checkBtn">Soil</div>
+        </div>
+
+    </aside>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+        <script src="../../assets/js/jq/jquery-2.1.0.min.js"></script>
+        <script type="text/ecmascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" ></script>
+		<!-- Bootstrap 3.3.7 -->
+		<script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+		<script src="../../assets/js/bootstrap/bootstrap-datepicker.min.js"></script>
+		<script src="../../assets/js/bootstrap/locales/bootstrap-datepicker.zh-CN.min.js" charset="UTF-8"></script>
+		<script src="../../assets/js/select/select2.full.min.js"></script>
+		<script src="../../assets/js/date/date.js"></script>
+		<script src="../../assets/js/data/data.js"></script>
+		<script src="../../assets/js/request.js"></script>
+		<script src="../../plugins/slideicon/slide.js"></script>
+		<script src="../../assets/js/config.js"></script>
+		<script src="../../assets/js/tool.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../../assets/js/adminlte.js"></script>
+		<script src="../../assets/js/common.js"></script>
+		<script src="../../assets/js/page/area.js"></script>
+		<script src="../../assets/js/url.js"></script>
+        <script src="../../assets/js/iCheck/icheck.js"></script>
+        <script src="../../assets/js/echarts.min.js"></script>
+        <script src="../../assets/js/moment.min.js"></script>
+        <script src="../../assets/js/public.js"></script>       
+		<script src="../../assets/js/page/newMystyle.js"></script>
+		<script src="../../assets/js/page/polluteanalysis.js"></script>
+<script>
+    
+</script>
+</body>
+</html>

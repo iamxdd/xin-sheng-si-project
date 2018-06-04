@@ -1,0 +1,22 @@
+{
+	"databufa":{
+		"limit":20,
+		"pageNumber":1,
+		"rows":5,
+		"total":10,
+		"data":[
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":2,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":2,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000},
+			{"id":0,"codedate":1526688000,"name":"国控","calcMode":20,"state":1,"codetime":1526688000}
+		]	
+	}
+}
